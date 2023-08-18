@@ -1,7 +1,7 @@
 # Личный проект «{{projectTitle}}»
 
-* Студент: [{{userName}}]({{userProfile}}).
-* Наставник: `Неизвестно`.
+* Студент: [Константин Борисов](https://github.com/koddaks).
+* Наставник: [Вячеслав Петров](https://github.com/slava560730).
 
 ---
 
