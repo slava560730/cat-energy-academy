@@ -43,44 +43,87 @@
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
-            <label class="program-selection-form__label input-name" for="name-field" id="name">
+            <label
+              class="program-selection-form__label"
+              for="name-field"
+              id="name"
+            >
               ИМЯ:<sup>*</sup>
-              <input type="text" id="name-field" name="name" />
             </label>
-            <label class="program-selection-form__label input-weight" for="weight-field" id="weight">
+            <input
+              class="program-selection-form__input input-text"
+              type="text"
+              id="name-field"
+              name="name"
+            />
+            <label
+              class="program-selection-form__label"
+              for="weight-field"
+              id="weight"
+            >
               Вес (кг):<sup>*</sup>
-              <input type="number" id="weight-field" name="weight" />
             </label>
-            <label class="program-selection-form__label input-age" for="age-field" id="age">
+            <input
+              class="program-selection-form__input input-number"
+              type="number"
+              id="weight-field"
+              name="weight"
+            />
+            <label
+              class="program-selection-form__label"
+              for="age-field"
+              id="age"
+            >
               Возраст (лет):
-              <input type="number" id="age-field" name="age" />
             </label>
+            <input
+              class="program-selection-form__input input-number"
+              type="number"
+              id="age-field"
+              name="age"
+            />
 
             <div class="cat-owner-details">
               <h2 class="cat-owner-details__title">
                 Контактные данные (владельца кота)
               </h2>
-              <label class="cat-owner-details__form-label input-email" for="email-field" id="email">
+              <label
+                class="cat-owner-details__form-label"
+                for="email-field"
+                id="email"
+              >
                 E-mail:<sup>*</sup>
-                <input type="email" id="email-field" name="email" />
               </label>
-              <label class="cat-owner-details__form-label input-phone" for="number-field" id="number">
+              <input
+                class="cat-owner-details__input input-email"
+                type="email"
+                id="email-field"
+                name="email"
+              />
+              <label
+                class="cat-owner-details__form-label"
+                for="number-field"
+                id="number"
+              >
                 Телефон:<sup>*</sup>
-                <input type="number" id="number-field" name="number" />
               </label>
+              <input
+                class="cat-owner-details__input input-number"
+                type="number"
+                id="number-field"
+                name="number"
+              />
             </div>
             <div class="comments-form">
               <h3 class="comments-form__title">Комментарий</h3>
-              <label class="comments-form__label input-age">
-                <textarea
-                  class="comments-form__textarea"
-                  name="comments"
-                  id="comments"
-                  cols="70"
-                  rows="10"
-                  placeholder="Расскажите обо всех повадках кота"
-                ></textarea>
-              </label>
+              <textarea
+                class="comments-form__textarea"
+                name="comments"
+                id="comments"
+                cols="70"
+                rows="10"
+                placeholder="Расскажите обо всех повадках кота"
+              ></textarea>
             </div>
             <div class="additionally">
               <h4 class="additionally__title">Дополнительно</h4>
@@ -88,7 +131,6 @@
                 <legend class="visually-hidden">
                   Выберите дополнительные критерии для подбора программы.
                 </legend>
-
                 <input
                   class="additionally-fieldset__checkbox additionally-fieldset__checkbox--checked"
                   type="checkbox"
@@ -122,7 +164,10 @@
                 <label for="vitamins">витамины</label>
               </fieldset>
             </div>
-            <button class="program-selection-form__submit-button button" type="submit">
+            <button
+              class="program-selection-form__submit-button button"
+              type="submit"
+            >
               отправить заявку
             </button>
             <span class="program-selection-form__required-fields-text">
@@ -138,14 +183,14 @@
           <h2 class="store-location__title">
             приглашаем к сотрудничеству дилеров!
           </h2>
-          <div class="store-location-address">
-            <p class="store-location-address__street">
+          <div class="store-location__address">
+            <p class="store-location__address-street">
               ул. Большая Конюшенная, д. 19/8
             </p>
-            <p class="store-location-address__city">Санкт-Петербург</p>
+            <p class="store-location__address-city">Санкт-Петербург</p>
           </div>
-          <div class="store-location-map">
-            <p class="store-location-map__description-text visually-hidden">
+          <div class="store-location__map">
+            <p class="store-location__map-description-text visually-hidden">
               Расположение магазина на карте.
             </p>
           </div>
