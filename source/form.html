@@ -39,51 +39,80 @@
             Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
           <form
-            class="program-selection-form"
+            class="program-form"
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
-            <label
-              class="program-selection-form__label"
-              for="name-field"
-              id="name"
-            >
-              ИМЯ:<sup>*</sup>
-            </label>
-            <input
-              class="program-selection-form__input input-text"
-              type="text"
-              id="name-field"
-              name="name"
-            />
-            <label
-              class="program-selection-form__label"
-              for="weight-field"
-              id="weight"
-            >
-              Вес (кг):<sup>*</sup>
-            </label>
-            <input
-              class="program-selection-form__input input-number"
-              type="number"
-              id="weight-field"
-              name="weight"
-            />
-            <label
-              class="program-selection-form__label"
-              for="age-field"
-              id="age"
-            >
-              Возраст (лет):
-            </label>
-            <input
-              class="program-selection-form__input input-number"
-              type="number"
-              id="age-field"
-              name="age"
-            />
+            <fieldset class="pet-details">
+              <label class="pet-details__label" for="name-field" id="name">
+                ИМЯ:<sup>*</sup>
+              </label>
+              <input
+                class="pet-details__input input-text"
+                type="text"
+                id="name-field"
+                name="name"
+              />
+              <label class="pet-details__label" for="weight-field" id="weight">
+                Вес (кг):<sup>*</sup>
+              </label>
+              <input
+                class="pet-details__input input-number"
+                type="number"
+                id="weight-field"
+                name="weight"
+              />
+              <label class="pet-details__label" for="age-field" id="age">
+                Возраст (лет):
+              </label>
+              <input
+                class="pet-details__input input-number"
+                type="number"
+                id="age-field"
+                name="age"
+              />
+            </fieldset>
 
-            <div class="cat-owner-details">
+            <fieldset class="program-type">
+              <legend class="visually-hidden">
+                Выберите желаемый результат.
+              </legend>
+              <div class="program-type__option">
+                <input
+                  class="program-type__option-input"
+                  type="radio"
+                  id="weight-loss"
+                  name="weight-loss"
+                />
+                <label class="program-type__option-label" for="weight-loss">
+                  похудение
+                </label>
+              </div>
+              <div class="program-type__option">
+                <input
+                  class="program-type__option-input"
+                  type="radio"
+                  id="mass-gain"
+                  name="mass-gain"
+                />
+                <label class="program-type__option-label" for="mass-gain">
+                  Набор массы
+                </label>
+              </div>
+              <div class="program-type__option">
+                <input
+                  class="program-type__option-input"
+                  type="radio"
+                  id="advice"
+                  name="advice"
+                />
+                <label class="program-type__option-label" for="advice">
+                  Не знаю (Нужен ваш совет)
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="cat-owner-details">
               <h2 class="cat-owner-details__title">
                 Контактные данные (владельца кота)
               </h2>
@@ -113,7 +142,7 @@
                 id="number-field"
                 name="number"
               />
-            </div>
+            </fieldset>
             <div class="comments-form">
               <h3 class="comments-form__title">Комментарий</h3>
               <textarea
@@ -165,13 +194,10 @@
                 <label for="vitamins">витамины</label>
               </fieldset>
             </div>
-            <button
-              class="program-selection-form__submit-button button"
-              type="submit"
-            >
+            <button class="program-form__submit-button button" type="submit">
               отправить заявку
             </button>
-            <span class="program-selection-form__required-fields-text">
+            <span class="program-form__required-fields-text">
               * — Обязательные поля
             </span>
           </form>
