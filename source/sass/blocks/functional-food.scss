@@ -1,10 +1,21 @@
 .functional-food {
   position: relative;
-  height: 480px;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: $mobile-width-only) {
+    min-height: 480px;
     color: $white;
     text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 874px;
+    padding: 62px 117px 0 117px;
+  }
+
+  @media (min-width: $desktop-width) {
+
   }
 }
 
@@ -15,18 +26,68 @@
     flex-direction: column;
     background-image: url("../../img/background-green.png"),
       url("../../img/index-background-image.png");
-    background-color: rgba(104, 183, 56, 0.85);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(104, 183, 56, 1);
+    background-position: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+.functional-food__background {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+
+    width: 50%;
+    min-height: 694px;
+
+    background-image: url("../../img/index-background-image-desktop.png");
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(104, 183, 56, 0.85);
+
+    top: 0;
+    right: 0;
+
+    z-index: -1;
   }
 }
 
 .functional-food__title {
   margin: 27px 0 0;
   padding: 0;
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+  }
 }
 
 .functional-food__text {
   margin: 25px 0 0;
   padding: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
 }
 
 .functional-food__image {
@@ -35,6 +96,23 @@
   margin-left: -140px;
   top: 64%;
   margin-top: -140px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+    margin-left: -355px;
+    top: 50%;
+    margin-top: -304px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 63%;
+    margin-left: -355px;
+    top: 50%;
+    margin-top: -276px;
+    z-index: 0;
+  }
 }
 
 .functional-food__button {
@@ -48,4 +126,17 @@
   padding: 11px 0;
   background-color: $basic_green;
   border: none;
+
+  margin-top: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    align-self: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+    margin-right: 50%;
+    margin-top: 20px;
+  }
 }

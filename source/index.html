@@ -9,25 +9,44 @@
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="#">
-        <img
-          class="main-header__logo-image"
-          src="./img/logo-mobile.svg"
-          alt="#"
-        />
+        <picture>
+          <source
+            srcset="./img/logo/logo-desktop.svg"
+            media="(min-width: 1440px)" />
+          <source
+            srcset="./img/logo/logo-tablet.svg"
+            media="(min-width: 767px)" />
+          <img
+            class="main-header__logo-image"
+            src="./img/logo/logo-mobile.svg"
+            alt="#"
+        /></picture>
       </a>
       <a class="main-header__title" href="#">
         <img
           class="main-header__title-logo"
-          src="./img/logo-title.svg"
+          src="./img/logo/logo-title.svg"
           alt="#"
         />
       </a>
       <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 18" fill="none">
-          <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
-          <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
-          <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="16"
+          viewBox="0 0 24 18"
+          fill="none"
+        >
+          <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5" />
+          <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5" />
+          <line
+            y1="17.25"
+            x2="24"
+            y2="17.25"
+            stroke="black"
+            stroke-width="1.5"
+          />
         </svg>
       </button>
       <nav class="main-nav">
@@ -48,13 +67,30 @@
     </header>
     <main class="main-container">
       <section class="functional-food">
+        <div class="functional-food__background"></div>
         <div class="functional-food__wrapper">
           <h1 class="functional-food__title">
-            Функциональное питание для котов
+            Функциональное<br />
+            питание для котов
           </h1>
           <p class="functional-food__text">Занялся собой? Займись котом!</p>
         </div>
-        <img class="functional-food__image" src="./img/product.png" alt="Изображение продукта Cat Energy." />
+        <picture>
+          <source
+            srcset="./img/index-product-desktop.png"
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="./img/index-product-tablet.png"
+            media="(min-width: 767px)"
+          />
+          <img
+            class="functional-food__image"
+            src="./img/index-product-mobile.png"
+            alt="Изображение продукта Cat Energy."
+          />
+        </picture>
+
         <button class="functional-food__button button" type="button">
           подобрать программу
         </button>

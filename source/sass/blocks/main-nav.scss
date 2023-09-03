@@ -47,3 +47,9 @@
   text-underline-offset: 10px;
   text-decoration-color: $basic_green;
 }
+
+.main-header__title-logo {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
