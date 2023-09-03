@@ -40,12 +40,21 @@
   text-transform: uppercase;
   display: block;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+    background-color: transparent;
+  }
 }
 
 .main-nav-list__item--current {
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration-color: $basic_green;
+
+  @media (min-width: $desktop-width) {
+    text-decoration-color: $white;
+  }
 }
 
 .main-header__title-logo {

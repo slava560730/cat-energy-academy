@@ -45,6 +45,7 @@
   .main-header {
     width: 100%;
     position: absolute;
+    background-color: transparent;
   }
 }
 
@@ -117,12 +118,24 @@
   display: block;
   text-decoration: none;
 }
+@media (min-width: 1440px) {
+  .main-nav-list__link {
+    color: #ffffff;
+    background-color: transparent;
+  }
+}
 
 .main-nav-list__item--current {
   text-decoration: underline;
   text-underline-offset: 10px;
   -webkit-text-decoration-color: #68b738;
           text-decoration-color: #68b738;
+}
+@media (min-width: 1440px) {
+  .main-nav-list__item--current {
+    -webkit-text-decoration-color: #ffffff;
+            text-decoration-color: #ffffff;
+  }
 }
 
 @media (min-width: 768px) {
