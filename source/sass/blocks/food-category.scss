@@ -1,0 +1,11 @@
+.food-category {
+  background-color: $white;
+  color: $black;
+}
+
+.food-category__wrapper {
+  padding: 20px 27px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
