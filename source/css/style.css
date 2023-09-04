@@ -65,6 +65,12 @@
   }
 }
 
+@media (min-width: 768px) {
+  .main-header__title-logo {
+    display: none;
+  }
+}
+
 .main-header__toggle {
   background-color: #ffffff;
   border: none;
@@ -135,12 +141,6 @@
   .main-nav-list__item--current {
     -webkit-text-decoration-color: #ffffff;
             text-decoration-color: #ffffff;
-  }
-}
-
-@media (min-width: 768px) {
-  .main-header__title-logo {
-    display: none;
   }
 }
 

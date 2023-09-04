@@ -31,6 +31,12 @@
   }
 }
 
+.main-header__title-logo {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .main-header__toggle {
   background-color: $white;
   border: none;
