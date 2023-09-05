@@ -1,16 +1,25 @@
 .live-example {
+  min-height: 700px;
   background-color: #eaeaea;
 }
 
 .live-example__title {
+  margin: 0 0 40px 0;
+  padding: 0;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
 }
 
 .live-example__text {
+  margin: 0 0 20px 0;
+  padding: 0;
   font-family: $arial;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+}
+
+.live-example__wrapper {
+  padding: 0 20px;
 }

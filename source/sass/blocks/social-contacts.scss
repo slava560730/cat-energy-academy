@@ -1,0 +1,16 @@
+.social-contacts {
+  background-color: $basic_grey;
+}
+
+.social-contacts__wrapper {
+  padding: 39px 20px 32px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.social-contacts__logo {
+  text-decoration: none;
+}
