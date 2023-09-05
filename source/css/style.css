@@ -467,6 +467,8 @@
 
 .store-location__wrapper {
   padding: 26px 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 .store-location__title {
