@@ -9,22 +9,45 @@
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="#">
-        <img
-          class="main-header__logo-image"
-          src="./img/logo-mobile.svg"
-          alt="#"
-        />
+        <picture>
+          <source
+            srcset="./img/logo/logo-desktop.svg"
+            media="(min-width: 1440px)" />
+          <source
+            srcset="./img/logo/logo-tablet.svg"
+            media="(min-width: 767px)" />
+          <img
+            class="main-header__logo-image"
+            src="./img/logo/logo-mobile.svg"
+            alt="#"
+        /></picture>
       </a>
       <a class="main-header__title" href="#">
         <img
           class="main-header__title-logo"
-          src="./img/logo-title.svg"
+          src="./img/logo/logo-title.svg"
           alt="#"
         />
       </a>
       <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
-
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="16"
+          viewBox="0 0 24 18"
+          fill="none"
+        >
+          <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5" />
+          <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5" />
+          <line
+            y1="17.25"
+            x2="24"
+            y2="17.25"
+            stroke="black"
+            stroke-width="1.5"
+          />
+        </svg>
       </button>
       <nav class="main-nav">
         <ul class="main-nav-list">
@@ -55,36 +78,52 @@
             method="post"
           >
             <fieldset class="program-form__fieldset">
-              <label class="program-form__label" for="name-field" id="name">
-                ИМЯ:<sup>*</sup>
-              </label>
-              <input
-                class="program-form__input input-text"
-                type="text"
-                id="name-field"
-                name="name"
-              />
-              <label class="program-form__label" for="weight-field" id="weight">
-                Вес (кг):<sup>*</sup>
-              </label>
-              <input
-                class="program-form__input input-number"
-                type="number"
-                id="weight-field"
-                name="weight"
-              />
-              <label class="program-form__label" for="age-field" id="age">
-                Возраст (лет):
-              </label>
-              <input
-                class="program-form__input input-number"
-                type="number"
-                id="age-field"
-                name="age"
-              />
+              <div class="program-form__wrapper">
+                <label class="program-form__label" for="name-field" id="name">
+                  ИМЯ:<sup>*</sup>
+                </label>
+                <input
+                  class="program-form__input input-text"
+                  type="text"
+                  id="name-field"
+                  name="name"
+                  placeholder="Барсик"
+                />
+              </div>
+
+              <div class="program-form__wrapper">
+                <label
+                  class="program-form__label"
+                  for="weight-field"
+                  id="weight"
+                >
+                  Вес (кг):<sup>*</sup>
+                </label>
+                <input
+                  class="program-form__input input-number"
+                  type="number"
+                  id="weight-field"
+                  name="weight"
+                  placeholder="7"
+                />
+              </div>
+              <div class="program-form__wrapper">
+                <label class="program-form__label" for="age-field" id="age">
+                  Возраст (лет):
+                </label>
+                <input
+                  class="program-form__input input-number"
+                  type="number"
+                  id="age-field"
+                  name="age"
+                  placeholder="7"
+                />
+              </div>
             </fieldset>
 
-            <fieldset class="program-form__fieldset">
+            <fieldset
+              class="program-form__fieldset program-form__fieldset--option"
+            >
               <legend class="visually-hidden">
                 Выберите желаемый результат.
               </legend>
@@ -127,32 +166,35 @@
               <h2 class="program-form__title">
                 Контактные данные (владельца кота)
               </h2>
-              <label
-                class="program-form__form-label"
-                for="email-field"
-                id="email"
-              >
-                E-mail:<sup>*</sup>
-              </label>
-              <input
-                class="program-form__input input-email"
-                type="email"
-                id="email-field"
-                name="email"
-              />
-              <label
-                class="program-form__form-label"
-                for="number-field"
-                id="number"
-              >
-                Телефон:<sup>*</sup>
-              </label>
-              <input
-                class="program-form__input input-number"
-                type="number"
-                id="number-field"
-                name="number"
-              />
+              <div class="program-form__wrapper">
+                <label class="program-form__label" for="email-field" id="email">
+                  E-mail:<sup>*</sup>
+                </label>
+                <input
+                  class="program-form__input input-email"
+                  type="email"
+                  id="email-field"
+                  name="email"
+                  placeholder="kuklachev@gmail.com"
+                />
+              </div>
+
+              <div class="program-form__wrapper">
+                <label
+                  class="program-form__label"
+                  for="number-field"
+                  id="number"
+                >
+                  Телефон:<sup>*</sup>
+                </label>
+                <input
+                  class="program-form__input input-number"
+                  type="number"
+                  id="number-field"
+                  name="number"
+                  placeholder="8 (960) 900-60-90"
+                />
+              </div>
             </fieldset>
             <div class="program-form__comments">
               <h3 class="program-form__title">Комментарий</h3>
@@ -160,57 +202,65 @@
                 class="program-form__textarea"
                 name="comments"
                 id="comments"
-                cols="70"
-                rows="10"
                 placeholder="Расскажите обо всех повадках кота"
               ></textarea>
             </div>
             <div class="program-form__additionally">
               <h4 class="program-form__title">Дополнительно</h4>
-              <fieldset class="program-form__fieldset">
+              <fieldset
+                class="program-form__fieldset program-form__fieldset--checkbox"
+              >
                 <legend class="visually-hidden">
                   Выберите дополнительные критерии для подбора программы.
                 </legend>
-                <input
-                  class="program-form__checkbox program-form__checkbox--checked"
-                  type="checkbox"
-                  id="sweetener"
-                  name="sweetener"
-                  checked
-                />
-                <label class="program-form__form-label" for="sweetener"
-                  >сахарозаменитель</label
-                >
+                <div class="program-form__wrapper-checkbox">
+                  <input
+                    class="program-form__checkbox program-form__checkbox--checked"
+                    type="checkbox"
+                    id="sweetener"
+                    name="sweetener"
+                    checked
+                  />
+                  <label class="program-form__form-label" for="sweetener">
+                    сахарозаменитель
+                  </label>
+                </div>
 
-                <input
-                  class="program-form__checkbox"
-                  type="checkbox"
-                  id="drinking-water"
-                  name="drinking-water"
-                />
-                <label class="program-form__form-label" for="drinking-water"
-                  >питьевая вода</label
-                >
+                <div class="program-form__wrapper-checkbox">
+                  <input
+                    class="program-form__checkbox"
+                    type="checkbox"
+                    id="drinking-water"
+                    name="drinking-water"
+                  />
+                  <label class="program-form__form-label" for="drinking-water">
+                    питьевая вода
+                  </label>
+                </div>
 
-                <input
-                  class="program-form__checkbox"
-                  type="checkbox"
-                  id="milk"
-                  name="milk"
-                />
-                <label class="program-form__form-label" for="milk"
-                  >молоко</label
-                >
+                <div class="program-form__wrapper-checkbox">
+                  <input
+                    class="program-form__checkbox"
+                    type="checkbox"
+                    id="milk"
+                    name="milk"
+                  />
+                  <label class="program-form__form-label" for="milk">
+                    молоко
+                  </label>
+                </div>
 
-                <input
-                  class="program-form__checkbox"
-                  type="checkbox"
-                  id="vitamins"
-                  name="vitamins"
-                />
-                <label class="program-form__form-label" for="vitamins"
-                  >витамины</label
-                >
+                <div class="program-form__wrapper-checkbox">
+                  <input
+                    class="program-form__checkbox"
+                    type="checkbox"
+                    id="vitamins"
+                    name="vitamins"
+                  />
+                  <label class="program-form__form-label" for="vitamins">
+                    витамины
+                  </label>
+                </div>
               </fieldset>
             </div>
             <button class="program-form__submit-button button" type="submit">
@@ -243,29 +293,52 @@
         </div>
       </section>
       <div class="social-contacts">
-        <a class="social-contacts__logo" href="#">
-          <img class="social-contacts__logo-title" src="#" alt="Cat energy." />
-        </a>
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
-              <img class="social-list__image" src="#" alt="Вконтакте." />
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
-              <img class="social-list__image" src="#" alt="Ютуб." />
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
-              <img class="social-list__image" src="#" alt="Телеграм." />
-            </a>
-          </li>
-        </ul>
-        <a class="social-contacts__htmlacademy-logo" href="#">
-          <img src="#" alt="Логотип HTML Academy." />
-        </a>
+        <div class="social-contacts__wrapper">
+          <a class="social-contacts__logo" href="#">
+            <img
+              class="social-contacts__logo-title"
+              src="#"
+              alt="Cat energy."
+            />
+          </a>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <img class="social-list__image" src="#" alt="Вконтакте." />
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <img class="social-list__image" src="#" alt="Ютуб." />
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <img class="social-list__image" src="#" alt="Телеграм." />
+              </a>
+            </li>
+          </ul>
+          <ul class="social-academy">
+            <li class="social-academy__item">
+              <a class="social-academy__link" href="#">
+                <img
+                  class="social-academy__image"
+                  src="#"
+                  alt="Title HTML Academy."
+                />
+              </a>
+            </li>
+            <li class="social-academy__item">
+              <a class="social-academy__link" href="#">
+                <img
+                  class="social-academy__image"
+                  src="#"
+                  alt="Логотип HTML Academy."
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

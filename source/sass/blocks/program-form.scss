@@ -1,0 +1,137 @@
+.program-form {
+  padding: 0 20px 0 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.program-form__fieldset {
+  margin: 0 0 25px 0;
+  padding: 0;
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.program-form__fieldset--option {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.program-form__fieldset--checkbox {
+  gap: 12px;
+}
+
+.program-form__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  margin: 0 0 14px 0;
+}
+
+.program-form__label {
+  color: $special_dark-grey;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.program-form__input {
+  font-family: "Oswald Regular", $arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  flex-grow: 1;
+
+  color: $special_dark-grey;
+}
+
+.program-form__title {
+  margin: 0 0 37px 0;
+  padding: 0;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.program-form__option {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.program-form__option-label {
+  color: $special_dark-grey-2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.program-form__option-input {
+  margin: 0;
+  padding: 0;
+}
+
+.program-form__comments {
+  margin: 0 0 23px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.program-form__textarea {
+  font-family: "Oswald Regular", $arial;
+  font-size: 16px;
+  line-height: 1.12;
+  text-transform: uppercase;
+
+  min-width: 280px;
+  min-height: 150px;
+  padding: 10px 12px 10px 15px;
+  box-sizing: border-box;
+
+  color: $special_dark-grey;
+}
+
+.program-form__wrapper-checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.program-form__checkbox {
+  margin: 0;
+  padding: 0;
+}
+
+.program-form__form-label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.program-form__submit-button {
+  margin: 0 0 21px 0;
+
+  font-family: "Oswald Regular", $arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.program-form__required-fields-text {
+  align-self: center;
+}
