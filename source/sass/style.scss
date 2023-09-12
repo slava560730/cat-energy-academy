@@ -1,5 +1,7 @@
 @import "./fonts.scss";
+@import "./visually-hidden.scss";
 @import "./global/variables.scss";
+@import "./button.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
@@ -17,21 +19,17 @@
 @import "./blocks/social-contacts.scss";
 @import "./blocks/social-list.scss";
 @import "./blocks/social-academy.scss";
+@import "./blocks/program-selection.scss";
+@import "./blocks/program-form.scss";
+@import "./blocks/catalog-container.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/catalog-list.scss";
+@import "./blocks/description-list.scss";
+@import "./blocks/additional.scss";
+@import "./blocks/additional-list.scss";
+@import "./blocks/additional-gift.scss";
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }

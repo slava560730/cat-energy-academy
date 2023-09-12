@@ -9,21 +9,45 @@
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="#">
-        <img
-          class="main-header__logo-image"
-          src="./img/logo-mobile.svg"
-          alt="#"
-        />
+        <picture>
+          <source
+            srcset="./img/logo/logo-desktop.svg"
+            media="(min-width: 1440px)" />
+          <source
+            srcset="./img/logo/logo-tablet.svg"
+            media="(min-width: 767px)" />
+          <img
+            class="main-header__logo-image"
+            src="./img/logo/logo-mobile.svg"
+            alt="#"
+        /></picture>
       </a>
       <a class="main-header__title" href="#">
         <img
           class="main-header__title-logo"
-          src="./img/logo-title.svg"
+          src="./img/logo/logo-title.svg"
           alt="#"
         />
       </a>
       <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="16"
+          viewBox="0 0 24 18"
+          fill="none"
+        >
+          <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5" />
+          <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5" />
+          <line
+            y1="17.25"
+            x2="24"
+            y2="17.25"
+            stroke="black"
+            stroke-width="1.5"
+          />
+        </svg>
       </button>
       <nav class="main-nav">
         <ul class="main-nav-list">
@@ -31,9 +55,7 @@
             <a class="main-nav-list__link" href="index.html">главная</a>
           </li>
           <li class="main-nav-list__item main-nav-list__item--current">
-            <a class="main-nav-list__link" href="#">
-              каталог продукции
-            </a>
+            <a class="main-nav-list__link" href="#"> каталог продукции </a>
           </li>
           <li class="main-nav-list__item">
             <a class="main-nav-list__link" href="form.html">подбор программы</a>
@@ -227,14 +249,24 @@
             </button>
           </li>
           <li class="catalog-list__item catalog-list__item—show-all">
-            <img class="catalog-list__item-image" src="#" alt="#" />
-            <p class="catalog-list__subtitle">
-              <b>Показать еще 100500 товаров</b>
-            </p>
-            <p class="catalog-list__text">
+            <img
+              class="catalog-list__item-image catalog-list__item—show-all--image"
+              src="./img/plus.svg"
+              alt="#"
+            />
+            <h2
+              class="catalog-list__item-title catalog-list__item—show-all--subtitle"
+            >
+              Показать еще 100500 товаров
+            </h2>
+            <p class="catalog-list__text catalog-list__item—show-all--text">
               На самом деле вкусов гораздо больше!
             </p>
-            <button class="catalog-list__button button">показать все</button>
+            <button
+              class="catalog-list__button button catalog-list__item—show-all--button"
+            >
+              показать все
+            </button>
           </li>
         </ul>
       </section>
@@ -290,7 +322,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <section class="store-location">
+      <section class="store-location store-location--background-dark">
         <div class="store-location__wrapper">
           <h2 class="store-location__title">
             приглашаем к сотрудничеству дилеров!
@@ -309,29 +341,52 @@
         </div>
       </section>
       <div class="social-contacts">
-        <a class="social-contacts__logo" href="#">
-          <img class="social-contacts__logo-title" src="#" alt="Cat energy." />
-        </a>
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
-              <img class="social-list__image" src="#" alt="Вконтакте." />
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
-              <img class="social-list__image" src="#" alt="Ютуб." />
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
-              <img class="social-list__image" src="#" alt="Телеграм." />
-            </a>
-          </li>
-        </ul>
-        <a class="social-contacts__htmlacademy-logo" href="#">
-          <img src="#" alt="Логотип HTML Academy." />
-        </a>
+        <div class="social-contacts__wrapper">
+          <a class="social-contacts__logo" href="#">
+            <img
+              class="social-contacts__logo-title"
+              src="#"
+              alt="Cat energy."
+            />
+          </a>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <img class="social-list__image" src="#" alt="Вконтакте." />
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <img class="social-list__image" src="#" alt="Ютуб." />
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <img class="social-list__image" src="#" alt="Телеграм." />
+              </a>
+            </li>
+          </ul>
+          <ul class="social-academy">
+            <li class="social-academy__item">
+              <a class="social-academy__link" href="#">
+                <img
+                  class="social-academy__image"
+                  src="#"
+                  alt="Title HTML Academy."
+                />
+              </a>
+            </li>
+            <li class="social-academy__item">
+              <a class="social-academy__link" href="#">
+                <img
+                  class="social-academy__image"
+                  src="#"
+                  alt="Логотип HTML Academy."
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

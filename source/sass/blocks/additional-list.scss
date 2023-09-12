@@ -1,0 +1,36 @@
+.additional-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.additional-list__item {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 0 19px 0;
+  padding: 12px 0 0 0;
+  border-top: 1px solid $special_grey;
+}
+
+.additional-list__title {
+  margin: 0 0 13px 0;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.additional-list__description {
+  margin: 0 0 15px 0;
+  display: flex;
+  justify-content: space-between;
+
+  color: $special_dark-grey;
+  font-family: $arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}

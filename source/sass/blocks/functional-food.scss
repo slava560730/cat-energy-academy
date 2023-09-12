@@ -2,20 +2,13 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
-  @media (max-width: $mobile-width-only) {
-    min-height: 480px;
-    color: $white;
-    text-align: center;
-  }
+  min-height: 480px;
+  color: $white;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     min-height: 874px;
     padding: 62px 117px 0 117px;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -24,8 +17,8 @@
     height: 302px;
     display: flex;
     flex-direction: column;
-    background-image: url("../../img/background-green.png"),
-      url("../../img/index-background-image.png");
+    background-image: url("../../img/index-background-image.png");
+    box-shadow: inset 0 0 0 1000px rgba(104, 183, 56, 0.85);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(104, 183, 56, 1);
