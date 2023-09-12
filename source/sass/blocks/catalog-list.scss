@@ -11,6 +11,8 @@
 .catalog-list__item {
   margin: 0 0 0 0;
   padding: 0 0 24px 0;
+
+  max-width: 347px;
   display: grid;
   grid-template-columns: 140px 2fr 1fr;
   grid-template-rows: min-content 14px 1fr min-content;
@@ -54,7 +56,8 @@
 }
 
 .catalog-list__item—show-all {
-  padding: 0 38px 24px 38px;
+  width: 100%;
+  max-width: 346px;
   display: grid;
   grid-template-columns: auto max-content auto;
   grid-template-rows: 2fr min-content min-content min-content;
