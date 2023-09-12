@@ -1,34 +1,45 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Form</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="#">
-        <img class="main-header__logo-image" src="#" alt="#" />
+        <img
+          class="main-header__logo-image"
+          src="./img/logo-mobile.svg"
+          alt="#"
+        />
       </a>
       <a class="main-header__title" href="#">
-        <img class="main-header__title-logo" src="#" alt="#" />
+        <img
+          class="main-header__title-logo"
+          src="./img/logo-title.svg"
+          alt="#"
+        />
       </a>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+
+      </button>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav-list">
-            <li class="main-nav-list__item">
-              <a href="index.html">главная</a>
-            </li>
-            <li class="main-nav-list__item">
-              <a href="catalog.html">каталог продукции</a>
-            </li>
-            <li class="main-nav-list__item main-nav-list__item--current">
-              <a href="#">подбор программы</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav-list">
+          <li class="main-nav-list__item">
+            <a class="main-nav-list__link" href="index.html">главная</a>
+          </li>
+          <li class="main-nav-list__item">
+            <a class="main-nav-list__link" href="catalog.html">
+              каталог продукции
+            </a>
+          </li>
+          <li class="main-nav-list__item main-nav-list__item--current">
+            <a class="main-nav-list__link" href="#">подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="form-container">
@@ -167,7 +178,9 @@
                   name="sweetener"
                   checked
                 />
-                <label class="program-form__form-label" for="sweetener">сахарозаменитель</label>
+                <label class="program-form__form-label" for="sweetener"
+                  >сахарозаменитель</label
+                >
 
                 <input
                   class="program-form__checkbox"
@@ -175,7 +188,9 @@
                   id="drinking-water"
                   name="drinking-water"
                 />
-                <label class="program-form__form-label" for="drinking-water">питьевая вода</label>
+                <label class="program-form__form-label" for="drinking-water"
+                  >питьевая вода</label
+                >
 
                 <input
                   class="program-form__checkbox"
@@ -183,7 +198,9 @@
                   id="milk"
                   name="milk"
                 />
-                <label class="program-form__form-label" for="milk">молоко</label>
+                <label class="program-form__form-label" for="milk"
+                  >молоко</label
+                >
 
                 <input
                   class="program-form__checkbox"
@@ -191,7 +208,9 @@
                   id="vitamins"
                   name="vitamins"
                 />
-                <label class="program-form__form-label" for="vitamins">витамины</label>
+                <label class="program-form__form-label" for="vitamins"
+                  >витамины</label
+                >
               </fieldset>
             </div>
             <button class="program-form__submit-button button" type="submit">

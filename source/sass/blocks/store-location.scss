@@ -1,0 +1,41 @@
+.store-location {
+  background-color: $white;
+  color: #111111;
+}
+
+.store-location__wrapper {
+  padding: 26px 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.store-location__title {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.store-location__address {
+  width: 50%;
+  color: $special_dark-grey;
+
+  font-family: $arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.42;
+}
+
+.store-location__address-street {
+  margin: 0;
+  padding: 0;
+}
+
+.store-location__address-city {
+  margin: 0;
+  padding: 0;
+}

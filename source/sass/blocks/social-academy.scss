@@ -1,0 +1,15 @@
+.social-academy {
+  width: 100%;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-academy__link {
+  text-decoration: none;
+}

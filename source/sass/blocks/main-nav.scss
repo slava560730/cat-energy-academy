@@ -1,0 +1,10 @@
+.main-nav {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+  }
+}
