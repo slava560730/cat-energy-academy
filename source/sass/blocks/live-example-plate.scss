@@ -8,6 +8,8 @@
 
   @media (min-width: $desktop-width) {
     width: 50%;
+    justify-content: flex-start;
+    gap: 42px;
   }
 }
 
@@ -76,6 +78,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    text-align: center;
+    display: flex;
+    gap: 63px;
   }
 }
