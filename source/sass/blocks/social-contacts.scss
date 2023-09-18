@@ -11,8 +11,13 @@
   gap: 40px;
 
   @media (min-width: $tablet-width) {
+    padding: 63px 30px 60px 30px;
     flex-direction: row;
     gap: 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 110px 30px 62px 110px;
   }
 }
 
