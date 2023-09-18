@@ -14,6 +14,11 @@
     flex-direction: row;
     justify-content: space-around;
   }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+
   display: none;
 }
 
@@ -31,9 +36,13 @@
   text-decoration: none;
 
   @media (min-width: $desktop-width) {
-    color: $white;
+    color: inherit;
     background-color: transparent;
   }
+}
+
+.main-nav-list--dark {
+  color: $black;
 }
 
 .main-nav-list__item--current {
