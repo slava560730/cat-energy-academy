@@ -8,6 +8,15 @@
   align-items: center;
 
   min-height: 289px;
+
+  gap: 48px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 77px 0 124px;
+
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .additional-gift__text {
