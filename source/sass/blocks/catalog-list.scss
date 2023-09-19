@@ -10,10 +10,13 @@
 
   @media (min-width: $tablet-width) {
     gap: 60px;
+    row-gap: 141px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
+    gap: 80px;
+    row-gap: 143px;
   }
 }
 
