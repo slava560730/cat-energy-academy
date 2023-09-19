@@ -6,16 +6,36 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
 
 .about-list__item {
   display: flex;
   flex-direction: row;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 45%;
+    flex-direction: column;
+  }
 }
 
 .about-list__text {
   margin: 0;
   padding: 0;
   color: $special_dark-grey;
+}
+
+.about-list__image {
+  min-width: 60px;
+  min-height: 60px;
 }

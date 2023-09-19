@@ -8,4 +8,12 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 82px 110px 71px 110px;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 80px;
+  }
 }

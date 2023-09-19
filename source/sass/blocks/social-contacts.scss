@@ -9,6 +9,11 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 140px;
+  }
 }
 
 .social-contacts__logo {
