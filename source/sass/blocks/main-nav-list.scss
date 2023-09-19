@@ -49,7 +49,9 @@
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration-color: $basic_green;
+}
 
+.main-nav-list__item-green-text--decoration {
   @media (min-width: $desktop-width) {
     text-decoration-color: $white;
   }
