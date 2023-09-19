@@ -69,6 +69,10 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 30%;
+  }
 }
 
 .store-location__address-street {
