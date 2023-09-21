@@ -14,6 +14,10 @@
   flex-direction: column;
 }
 
+.program-form__fieldset--cat-owner {
+  margin: 0;
+}
+
 .program-form__fieldset--option {
   display: flex;
   flex-direction: column;
@@ -75,8 +79,35 @@
 .program-form__wrapper {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 14px;
   margin: 0 0 14px 0;
+  width: 100%;
+  max-width: 500px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+.program-form__fieldset--cat-owner-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 78px;
+  }
+}
+
+.program-form--cat-owner-data {
+  margin: 0;
 }
 
 .program-form__label {
@@ -86,6 +117,10 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.program-form__label--age {
+  letter-spacing: -0.8px;
 }
 
 .program-form__input {
@@ -98,6 +133,8 @@
   flex-grow: 1;
 
   color: $special_dark-grey;
+
+  padding: 12px 19px;
 }
 
 .program-form__title {
@@ -203,6 +240,7 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    padding: 16px 0;
   }
 }
 

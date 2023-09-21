@@ -12,6 +12,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 63px 30px 60px 30px;
+    justify-content: space-around;
     flex-direction: row;
     gap: 140px;
   }
