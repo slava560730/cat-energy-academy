@@ -1,5 +1,5 @@
 .program-form {
-  padding: 0 20px 0 20px;
+  padding: 0;
 
   display: flex;
   flex-direction: column;
@@ -18,10 +18,58 @@
   display: flex;
   flex-direction: column;
   gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 28px 30px 28px;
+    border: 1px solid #e7e7e7;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+  }
+}
+
+.program-form__fieldset-wrapper {
+  margin: 0 0 25px 0;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 75px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 69px 0;
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+
+.program-form__fieldset--pet-info {
+  margin: 0;
+  flex-grow: 1;
 }
 
 .program-form__fieldset--checkbox {
   gap: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 54px 0;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    column-gap: 124px;
+    row-gap: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 61px 0;
+    flex-wrap: nowrap;
+    gap: 105px;
+  }
 }
 
 .program-form__wrapper {
@@ -106,6 +154,10 @@
   display: flex;
   flex-direction: row;
   gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 33%;
+  }
 }
 
 .program-form__checkbox {
@@ -121,8 +173,26 @@
   text-transform: uppercase;
 }
 
+.program-form__form-button-wrapper {
+  margin: 0 0 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 72px 0;
+    flex-direction: row;
+    gap: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 82px 0;
+    gap: 81px;
+  }
+}
+
 .program-form__submit-button {
-  margin: 0 0 21px 0;
+  margin: 0;
 
   font-family: "Oswald Regular", $arial;
   font-size: 16px;
@@ -130,8 +200,16 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .program-form__required-fields-text {
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
