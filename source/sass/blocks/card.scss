@@ -50,6 +50,14 @@
 
 .card__image {
   grid-area: image;
+  width: 100%;
+  min-width: 50px;
+  padding: 0 0 22px 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 200px;
+    min-height: 211px;
+  }
 }
 
 .card__link {
