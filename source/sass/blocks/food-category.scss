@@ -4,10 +4,15 @@
 }
 
 .food-category__wrapper {
-  padding: 20px 27px;
+  padding: 20px 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 45px 30px;
+    gap: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 82px 110px 71px 110px;

@@ -1,11 +1,18 @@
 .social-list {
+  width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 0 21px 0;
   list-style: none;
 
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .social-list__link {
