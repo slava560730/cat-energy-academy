@@ -272,60 +272,68 @@
       </section>
       <section class="additional">
         <h2 class="additional__title">Дополнительные товары</h2>
-        <ul class="additional-list">
-          <li class="additional-list__item">
-            <h3 class="additional-list__title">Сахарозаменитель</h3>
-            <div class="additional-list__description">
-              <span class="additional-list__description-value">
-                1 упаковка (100 г)
-              </span>
-              <span class="additional-list__description-price">200 Р.</span>
-            </div>
-            <button class="additional-list__button button">заказать</button>
-          </li>
+        <div class="additional__wrapper">
+          <ul class="additional-list">
+            <li class="additional-list__item">
+              <h3 class="additional-list__title">Сахарозаменитель</h3>
+              <div class="additional-list__description">
+                <span class="additional-list__description-value">
+                  1 упаковка (100 г)
+                </span>
+                <span class="additional-list__description-price">200 Р.</span>
+              </div>
+              <button class="additional-list__button button">заказать</button>
+            </li>
 
-          <li class="additional-list__item">
-            <h3 class="additional-list__title">питьевая вода</h3>
-            <div class="additional-list__description">
-              <span class="additional-list__description-value">5 литров</span>
-              <span class="additional-list__description-price">50 Р.</span>
-            </div>
-            <button class="additional-list__button button">заказать</button>
-          </li>
+            <li class="additional-list__item">
+              <h3 class="additional-list__title">питьевая вода</h3>
+              <div class="additional-list__description">
+                <span class="additional-list__description-value">5 литров</span>
+                <span class="additional-list__description-price">50 Р.</span>
+              </div>
+              <button class="additional-list__button button">заказать</button>
+            </li>
 
-          <li class="additional-list__item">
-            <h3 class="additional-list__title">молоко</h3>
-            <div class="additional-list__description">
-              <span class="additional-list__description-value">1 литр</span>
-              <span class="additional-list__description-price">100 Р.</span>
-            </div>
-            <button class="additional-list__button button">заказать</button>
-          </li>
+            <li class="additional-list__item">
+              <h3 class="additional-list__title">молоко</h3>
+              <div class="additional-list__description">
+                <span class="additional-list__description-value">1 литр</span>
+                <span class="additional-list__description-price">100 Р.</span>
+              </div>
+              <button class="additional-list__button button">заказать</button>
+            </li>
 
-          <li class="additional-list__item">
-            <h3 class="additional-list__title">витамины</h3>
-            <div class="additional-list__description">
-              <span class="additional-list__description-value"
-                >1 упаковка (30 г)</span
-              >
-              <span class="additional-list__description-price">300 Р.</span>
-            </div>
-            <button class="additional-list__button button">заказать</button>
-          </li>
-        </ul>
-        <div class="additional-gift">
-          <img class="additional-gift__image" src="#" alt="Картинка подарка." />
-          <p class="additional-gift__text">
-            Закажите все и получите чехол для кота в подарок!
-          </p>
+            <li class="additional-list__item">
+              <h3 class="additional-list__title">витамины</h3>
+              <div class="additional-list__description">
+                <span class="additional-list__description-value"
+                  >1 упаковка (30 г)</span
+                >
+                <span class="additional-list__description-price">300 Р.</span>
+              </div>
+              <button class="additional-list__button button">заказать</button>
+            </li>
+          </ul>
+          <div class="additional-gift">
+            <img
+              class="additional-gift__image"
+              src="#"
+              alt="Картинка подарка."
+            />
+            <p class="additional-gift__text">
+              Закажите все и получите чехол для кота в подарок!
+            </p>
+          </div>
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <section class="store-location store-location--background-dark">
+      <section class="store-location">
         <div class="store-location__wrapper">
           <h2 class="store-location__title">
-            приглашаем к сотрудничеству дилеров!
+            приглашаем<br />
+            к сотрудничеству<br />
+            дилеров!
           </h2>
           <div class="store-location__address">
             <p class="store-location__address-street">
@@ -333,11 +341,18 @@
             </p>
             <p class="store-location__address-city">Санкт-Петербург</p>
           </div>
-          <div class="store-location__map">
-            <p class="store-location__map-description-text visually-hidden">
-              Расположение магазина на карте.
-            </p>
-          </div>
+        </div>
+        <div class="store-location__map">
+          <p class="store-location__map-description-text visually-hidden">
+            Расположение магазина на карте.
+          </p>
+          <iframe
+            class="store-location__map-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5288.9397551001075!2d35.03669576360264!3d48.48588120355902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sro!4v1695032852723!5m2!1sru!2sro"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
       <div class="social-contacts">

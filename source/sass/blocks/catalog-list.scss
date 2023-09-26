@@ -1,23 +1,62 @@
 .catalog-list {
+  // width: 100%;
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 19px;
+
+
+  @media (min-width: $tablet-width) {
+    gap: 60px;
+    row-gap: 141px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    gap: 80px;
+    row-gap: 143px;
+  }
 }
 
 .catalog-list__item {
+  width: 100%;
   margin: 0 0 0 0;
   padding: 0 0 24px 0;
 
-  max-width: 347px;
+  // max-width: 347px;
   display: grid;
   grid-template-columns: 140px 2fr 1fr;
   grid-template-rows: min-content 14px 1fr min-content;
 
   border-bottom: 1px solid $special_grey-2;
+
+  @media (min-width: $tablet-width) {
+    width: 45%;
+    min-width: 324px;
+    background-color: $basic_grey;
+
+    grid-template-areas:
+      ". image ."
+      ". title ."
+      ". description ."
+      ". button .";
+
+    // grid-template-columns: 37px 1fr 37px;
+    grid-template-columns:
+      minmax(37px, 41px)
+      minmax(248px, auto)
+      minmax(37px, 41px);
+    grid-template-rows: 191px min-content min-content min-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 28%;
+    min-width: 245px;
+  }
 }
 
 .catalog-list__item-title {
@@ -30,14 +69,29 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    grid-area: title;
+    justify-self: center;
+
+    margin: 0 0 21px 0;
+  }
 }
 
 .catalog-list__item-image {
   grid-column: 1 / 2;
   grid-row: 1 / 4;
+
+  @media (min-width: $tablet-width) {
+    grid-area: image;
+    justify-self: center;
+
+    margin: 0 0 34px 0;
+  }
 }
 
 .catalog-list__button {
+  width: 100%;
   margin: 13px 0 0 0;
   padding: 10px 0;
   grid-row: 4 / 5;
@@ -53,14 +107,28 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    grid-area: button;
+  }
 }
 
 .catalog-list__item—show-all {
   width: 100%;
-  max-width: 346px;
+  min-width: 324px;
   display: grid;
   grid-template-columns: auto max-content auto;
   grid-template-rows: 2fr min-content min-content min-content;
+
+  @media (min-width: $tablet-width) {
+    width: 45%;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    max-width: 28%;
+    min-height: 429px;
+  }
 }
 
 .catalog-list__item—show-all--image {
@@ -68,6 +136,7 @@
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   justify-self: center;
+  align-self: center;
 }
 
 .catalog-list__item—show-all--subtitle {
