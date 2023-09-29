@@ -8,13 +8,16 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 14px;
 
   @media (min-width: $tablet-width) {
+    width: 33%;
     padding: 0;
   }
 }
 
 .social-list__link {
   text-decoration: none;
+  padding: 10px;
+  cursor: alias;
 }

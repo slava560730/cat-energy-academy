@@ -1,6 +1,6 @@
 .social-academy {
   width: 100%;
-  min-width: 280px;
+  // min-width: 280px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -12,7 +12,9 @@
   border-bottom: none;
 
   @media (min-width: $tablet-width) {
+    width: 33%;
     justify-content: flex-end;
+    gap: 22px;
   }
 }
 
