@@ -10,7 +10,12 @@
     position: relative;
   }
 
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding-top: 47px;
     width: 100%;
     position: absolute;
     background-color: transparent;
