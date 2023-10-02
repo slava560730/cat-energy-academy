@@ -6,6 +6,10 @@
 .about__wrapper {
   padding: 0 27px 49px;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 47px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0 110px 69px;
   }

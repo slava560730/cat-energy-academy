@@ -1,4 +1,6 @@
 .about-list {
+  position: relative;
+  z-index: 1;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -7,39 +9,95 @@
   flex-direction: column;
   gap: 20px;
 
+  counter-reset: about-list-counter;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 137px;
+    row-gap: 37px;
   }
 
   @media (min-width: $desktop-width) {
+    gap: 80px;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 }
 
 .about-list__item {
+  position: relative;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 20px;
 
+  counter-increment: about-list-counter;
+
   @media (min-width: $tablet-width) {
-    width: 45%;
+    align-items: normal;
+    width: 35%;
+    min-height: 280px;
     flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 20%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-list__item::after {
+    font-family: "Oswald Regular", $arial;
+    font-size: 280px;
+
+    content: counter(about-list-counter);
+
+    position: absolute;
+    color: $basic_grey;
+    z-index: -1;
+    top: -80px;
+    right: 0;
   }
 }
 
 .about-list__text {
+  font-family: $arial;
   margin: 0;
   padding: 0;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
 .about-list__image {
   background-color: $basic_green;
-  background-image: url("../../img/icons/leaf.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 80px;
+    min-height: 80px;
+  }
+}
+
+.about-list__image--leaf {
+  background-image: url("../../img/icons/leaf.svg");
+}
+
+.about-list__image--tube {
+  background-image: url("../../img/icons/tube.svg");
+}
+
+.about-list__image--food {
+  background-image: url("../../img/icons/food.svg");
+}
+
+.about-list__image--alarm {
+  background-image: url("../../img/icons/alarm.svg");
 }
