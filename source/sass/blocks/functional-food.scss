@@ -9,7 +9,11 @@
   @media (min-width: $tablet-width) {
     color: $black;
     min-height: 874px;
-    padding: 62px 117px 0 117px;
+    padding: 62px 120px 0 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 223px 190px 0 190px;
   }
 }
 
@@ -103,7 +107,7 @@
     position: absolute;
     left: 50%;
     margin-left: -355px;
-    top: 50%;
+    top: 59%;
     margin-top: -304px;
     z-index: -1;
   }
@@ -132,12 +136,8 @@
   margin: auto 20px 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
+    margin: 0;
     align-self: start;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 50%;
-    margin-top: 20px;
+    padding: 18px 55px;
   }
 }
