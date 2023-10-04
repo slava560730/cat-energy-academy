@@ -33,7 +33,20 @@
 }
 
 .main-nav--opened .main-nav-list {
-  display: flex;
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+  }
+}
+
+.main-nav--nojs .main-nav-list {
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 66px;
+    left: 0;
+    z-index: 1;
+  }
 }
 
 .main-nav-list__link {
