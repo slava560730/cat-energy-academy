@@ -65,14 +65,21 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .live-example-plate__text br {
+    display: none;
+  }
+}
+
 .live-example-plate__text--weight {
   padding: 0 12px;
   top: 51px;
   right: 20px;
 
   @media (min-width: $tablet-width) {
-    right: 34px;
-    top: 60px;
+    padding: 0 8px;
+    right: 22px;
+    top: 67px;
   }
 }
 
@@ -82,8 +89,9 @@
   right: 20px;
 
   @media (min-width: $tablet-width) {
-    top: 60px;
-    right: 32px;
+    padding: 0 8px;
+    top: 67px;
+    right: 8px;
   }
 }
 
