@@ -21,10 +21,18 @@
 
 .live-example-plate__item--weight {
   padding: 16px 42px;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 61px;
+  }
 }
 
 .live-example-plate__item--days {
   padding: 16px 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 40px;
+  }
 }
 
 .live-example-plate__value {
@@ -37,8 +45,9 @@
   padding: 0;
   color: $special_dark-grey;
   font-family: $arial;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
+  line-height: 1;
 
   position: absolute;
   background-color: #eaeaea;
@@ -47,6 +56,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    font-size: 14px;
     background-color: $white;
   }
 
@@ -57,14 +67,24 @@
 
 .live-example-plate__text--weight {
   padding: 0 12px;
-  top: 44px;
-  right: 14px;
+  top: 51px;
+  right: 20px;
+
+  @media (min-width: $tablet-width) {
+    right: 34px;
+    top: 60px;
+  }
 }
 
 .live-example-plate__text--days {
   padding: 0 12px;
-  top: 44px;
-  right: 16px;
+  top: 51px;
+  right: 20px;
+
+  @media (min-width: $tablet-width) {
+    top: 60px;
+    right: 32px;
+  }
 }
 
 .live-example-plate__expenses {
@@ -76,9 +96,21 @@
   line-height: 1.4;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
+
+    font-size: 20px;
+    line-height: 1;
+  }
+
   @media (min-width: $desktop-width) {
     width: 100%;
-    display: flex;
+    flex-direction: row;
     gap: 63px;
   }
 }

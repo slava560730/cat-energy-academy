@@ -8,6 +8,9 @@
 
   @media (max-width: $mobile-width-only) {
     position: relative;
+    padding: 10px 20px 17px 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: $tablet-width) {
@@ -37,17 +40,16 @@
   }
 }
 
+.main-header__title {
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
+    padding: 0 34px 0 0;
+  }
+}
+
 .main-header__title-logo {
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.main-header__toggle {
-  background-color: $white;
-  border: none;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
