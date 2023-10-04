@@ -58,8 +58,8 @@
 }
 
 .functional-food__title {
-  margin: 27px 0 0;
-  padding: 0;
+  margin: 27px 0 25px 0;
+  padding: 0 35px 0 36px;
 
   font-size: 36px;
   font-style: normal;
@@ -68,7 +68,7 @@
 
   @media (min-width: $tablet-width) {
     width: 85%;
-    margin: 0 0 25px 0;
+    margin: 0 0 41px 0;
     text-align: start;
     font-size: 60px;
     font-style: normal;
