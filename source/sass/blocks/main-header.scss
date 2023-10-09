@@ -1,9 +1,10 @@
 .main-header {
+  box-sizing: border-box;
   background-color: $white;
   color: $black;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   @media (max-width: $mobile-width-only) {
@@ -14,11 +15,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 20px;
+    padding: 20px 30px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 47px;
+    padding: 47px 110px 0 110px;
+
     width: 100%;
     position: absolute;
     background-color: transparent;
@@ -52,4 +54,3 @@
     display: none;
   }
 }
-
