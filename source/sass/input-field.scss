@@ -1,0 +1,21 @@
+.input-field {
+  background-repeat: no-repeat;
+  background-position: right 15px bottom 50%;
+
+  @media (min-width: $tablet-width) {
+    background-position: right 20px bottom 50%;
+  }
+}
+
+.input-field--email {
+  background-image: url("../img/icons/email.svg");
+}
+
+.input-field--phone {
+  background-image: url("../img/icons/phone.svg");
+  background-position: right 13px bottom 50%;
+
+  @media (min-width: $tablet-width) {
+    background-position: right 17px bottom 50%;
+  }
+}

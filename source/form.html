@@ -150,9 +150,11 @@
             </div>
 
             <fieldset class="program-form__fieldset">
-              <h2 class="program-form__title">
-                Контактные данные (владельца кота)
-              </h2>
+              <div class="programm-form_title-wrapper">
+                <h2 class="program-form__title">
+                  Контактные данные (владельца кота)
+                </h2>
+              </div>
               <div class="program-form__fieldset--cat-owner-wrapper">
                 <div class="program-form__wrapper program-form--cat-owner-data">
                   <label
@@ -163,7 +165,7 @@
                     E-mail:<sup>*</sup>
                   </label>
                   <input
-                    class="program-form__input input-email"
+                    class="program-form__input input-field input-field--email"
                     type="email"
                     id="email-field"
                     name="email"
@@ -180,7 +182,7 @@
                     Телефон:<sup>*</sup>
                   </label>
                   <input
-                    class="program-form__input input-number"
+                    class="program-form__input input-field input-field--phone"
                     type="number"
                     id="number-field"
                     name="number"
@@ -190,7 +192,9 @@
               </div>
             </fieldset>
             <div class="program-form__comments">
-              <h3 class="program-form__title">Комментарий</h3>
+              <div class="programm-form_title-wrapper">
+                <h3 class="program-form__title">Комментарий</h3>
+              </div>
               <textarea
                 class="program-form__textarea"
                 name="comments"
@@ -199,7 +203,10 @@
               ></textarea>
             </div>
             <div class="program-form__additionally">
-              <h4 class="program-form__title">Дополнительно</h4>
+              <div class="programm-form_title-wrapper">
+                <h4 class="program-form__title">Дополнительно</h4>
+              </div>
+
               <fieldset
                 class="program-form__fieldset program-form__fieldset--checkbox"
               >

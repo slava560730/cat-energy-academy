@@ -23,8 +23,11 @@
   flex-direction: column;
   gap: 13px;
 
+  padding: 22px 0 20px 0;
+  margin: 0;
+
   @media (min-width: $tablet-width) {
-    padding: 30px 28px 30px 28px;
+    padding: 25px 28px 25px 28px;
     border: 1px solid #e7e7e7;
   }
 
@@ -34,10 +37,23 @@
 }
 
 .program-form__fieldset-wrapper {
+  position: relative;
   margin: 0 0 25px 0;
 
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      width: 100vw;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 0 75px 0;
@@ -51,9 +67,38 @@
 }
 
 .program-form__fieldset--pet-info {
+  position: relative;
   margin: 0;
+  // width: 100%;
   flex-grow: 1;
+  padding: 0 0 9px 0;
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      width: 100vw;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+
+    gap: 20px;
+  }
 }
+
+.program-form__fieldset--pet-info .program-form__wrapper {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
 
 .program-form__fieldset--checkbox {
   gap: 12px;
@@ -117,6 +162,10 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .program-form__label--age {
@@ -134,17 +183,78 @@
 
   color: $special_dark-grey;
 
-  padding: 12px 19px;
+  padding: 12px 15px;
+  border: 1px solid $special_grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 20px;
+
+    font-size: 20px;
+  }
 }
 
 .program-form__title {
-  margin: 0 0 37px 0;
-  padding: 0;
+  display: inline;
+  background-color: $white;
+  margin: 0;
+  padding: 0 22px 0 0;
 
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 1.2;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 39px 0 39px;
+    margin-left: -39px;
+
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px 0 40px;
+    margin-left: -40px;
+  }
+}
+
+.programm-form_title-wrapper {
+  position: relative;
+  margin: 0 0 37px 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: $basic_green;
+
+    top: 50%;
+    left: 20px;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      left: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 110px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: $basic_green;
+
+      top: 50%;
+      left: -100px;
+      z-index: -1;
+    }
+  }
 }
 
 .program-form__option {
@@ -158,8 +268,12 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.12;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .program-form__option-input {
@@ -185,6 +299,13 @@
   box-sizing: border-box;
 
   color: $special_dark-grey;
+
+  border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .program-form__wrapper-checkbox {
@@ -208,6 +329,10 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .program-form__form-button-wrapper {
