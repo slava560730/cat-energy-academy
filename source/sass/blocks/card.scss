@@ -9,6 +9,7 @@
     "card_link card_link card_link";
 
   @media (min-width: $tablet-width) {
+    padding: 77px 62px 57px 52px;
     grid-template-areas:
       "title title image"
       "text text image"
@@ -16,6 +17,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 41px 51px 59px 52px;
     grid-template-areas:
       "image title title"
       "text text text"
@@ -27,39 +29,99 @@
   grid-area: title;
 
   margin: 0;
-  padding: 0 0 29px 0;
   font-size: 24px;
   font-weight: 400;
-  line-height: 37px;
+  line-height: 1.54;
   text-transform: uppercase;
-  text-align: center;
+
+  justify-self: center;
+  align-self: center;
+  letter-spacing: -0.6px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    justify-self: flex-start;
+  }
 }
 
 .card__text {
   grid-area: text;
 
-  color: $special_dark-grey;
-  margin: 0 0 20px 0;
+  font-family: $arial;
   padding: 0 0 23px 0;
+  color: $special_dark-grey;
+  margin: 22px 0 20px 0;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
+    padding: 0 21px 23px 0;
     border-bottom: none;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 23px 0;
   }
 }
 
 .card__image {
   grid-area: image;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    min-width: 210px;
+    max-height: 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 -56px;
+    max-width: 134px;
+    max-height: 100px;
+  }
+}
+
+.card__image--mass-gain {
+  margin-left: -7px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 -50px 0 0;
+    min-width: 268px;
+    min-height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 0;
+    min-width: 134px;
+    min-height: 100px;
+  }
 }
 
 .card__link {
   grid-area: card_link;
 
+  display: flex;
+  gap: 17px;
+  align-items: center;
+
   color: $black;
 
   font-size: 16px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+.card__link-image {
+  width: 32px;
+  height: 16px;
+  background-image: url("../../img/icons/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

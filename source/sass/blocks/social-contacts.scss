@@ -12,16 +12,35 @@
 
   @media (min-width: $tablet-width) {
     padding: 63px 30px 60px 30px;
-    justify-content: space-around;
+    // justify-content: space-around;
     flex-direction: row;
-    gap: 140px;
+    gap: 0;
+    // gap: 140px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 110px 30px 62px 110px;
+    padding: 63px  110px 62px 110px;
+  }
+}
+
+.social-contacts__wrapper > * {
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
   }
 }
 
 .social-contacts__logo {
   text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    width: 33%;
+    padding: 0;
+    justify-content: start;
+  }
 }

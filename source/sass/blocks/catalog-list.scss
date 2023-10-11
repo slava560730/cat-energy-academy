@@ -27,7 +27,6 @@
   margin: 0 0 0 0;
   padding: 0 0 24px 0;
 
-  // max-width: 347px;
   display: grid;
   grid-template-columns: 140px 2fr 1fr;
   grid-template-rows: min-content 14px 1fr min-content;
@@ -81,8 +80,11 @@
 .catalog-list__item-image {
   grid-column: 1 / 2;
   grid-row: 1 / 4;
+  padding: 14px 36px 12px 36px;
 
   @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
     grid-area: image;
     justify-self: center;
 
