@@ -11,8 +11,8 @@
 }
 
 .additional__title {
-  margin: 0 0 35px 0;
-  padding: 0 22px 0 0;
+  margin: 0 0 35px -20px;
+  padding: 0 22px 0 20px;
   display: inline;
   background-color: $white;
 
@@ -22,6 +22,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 37px 0 37px;
+    margin-left: 0;
 
     font-size: 36px;
     line-height: 1;
@@ -40,7 +41,7 @@
   &::after {
     position: absolute;
     content: "";
-    width: 100%;
+    width: 100vw;
     height: 2px;
     background-color: $basic_green;
 
@@ -48,12 +49,16 @@
     left: 20px;
     z-index: -1;
 
+    @media (max-width: $mobile-width-only) {
+      left: -20px;
+    }
+
     @media (min-width: $tablet-width) {
-      left: 70px;
+      left: -30px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 110px;
+      left: -110px;
     }
   }
 
@@ -61,7 +66,7 @@
     &::before {
       position: absolute;
       content: "";
-      width: 100%;
+      width: 100vw;
       height: 2px;
       background-color: $basic_green;
 
