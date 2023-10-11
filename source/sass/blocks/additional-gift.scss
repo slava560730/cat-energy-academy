@@ -17,6 +17,13 @@
     flex-direction: row;
     justify-content: space-around;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 .additional-gift__text {
