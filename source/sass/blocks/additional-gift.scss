@@ -22,12 +22,12 @@
 
     flex-direction: row;
     justify-content: space-around;
-
-    background-position: top 59% left 0;
+    background-image: url("../../img/additional-gift-bg-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    background-image: url("../../img/additional-gift-bg-desktop.png");
 
     flex-direction: column;
     justify-content: space-around;
