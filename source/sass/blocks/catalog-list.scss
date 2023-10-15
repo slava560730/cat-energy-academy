@@ -33,22 +33,6 @@
   border-bottom: 1px solid $special_grey-2;
 
   @media (min-width: $tablet-width) {
-    // width: 45%;
-    // min-width: 324px;
-    // background-color: $basic_grey;
-
-    // grid-template-areas:
-    //   ". image ."
-    //   ". title ."
-    //   ". description ."
-    //   ". button .";
-
-    // grid-template-columns:
-    //   minmax(37px, 41px)
-    //   minmax(248px, auto)
-    //   minmax(37px, 41px);
-    // grid-template-rows: 191px min-content min-content min-content;
-
     width: 44%;
     min-width: 324px;
     background-color: #f2f2f2;
