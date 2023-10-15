@@ -189,7 +189,7 @@
               </p>
             </li>
             <li class="about-list__item">
-              <div class="about-list__image about-list__image--food" ></div>
+              <div class="about-list__image about-list__image--food"></div>
               <p class="about-list__text">
                 Замените один-два приема обычной еды на наше функциональное
                 питание.
@@ -243,11 +243,31 @@
                 15 000 РУБ.
               </span>
             </p>
-            <!-- <div class="live-example-plate__image">
-              BEFORE/AFTER SLIDER
-            </div> -->
+          </div>
+          <!-- Slider -->
+          <div class="live-example-plate__image-wrapper">
+            <!-- <img
+              class="live-example-plate__image"
+              src="#"
+              alt="Фотография кота до похудения."
+            /> -->
+
+            <div class="before-after" draggable="false">
+              <div class="images">
+                <div class="before">
+                  <img src="https://i.imgur.com/biUzxW2.png" alt="before"/>
+                </div>
+                <div class="after" draggable="false">
+                  <img src="https://i.imgur.com/hsUrYXn.png" alt="after"/>
+                </div>
+              </div>
+              <div class="controls">
+                <div class="pad"></div>
+              </div>
+            </div>
           </div>
         </div>
+
       </section>
     </main>
     <footer class="main-footer">
@@ -442,5 +462,6 @@
       </div>
     </footer>
     <script src="./js/nav-toggle.js"></script>
+    <script src="./js/slider-before-after.js"></script>
   </body>
 </html>
