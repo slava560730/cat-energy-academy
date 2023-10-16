@@ -12,15 +12,18 @@
         <picture>
           <source
             srcset="./img/logo/logo-desktop.svg"
-            media="(min-width: 1440px)" />
+            media="(min-width: 1440px)"
+          />
           <source
             srcset="./img/logo/logo-tablet.svg"
-            media="(min-width: 767px)" />
+            media="(min-width: 767px)"
+          />
           <img
             class="main-header__logo-image"
             src="./img/logo/logo-mobile.svg"
             alt="#"
-        /></picture>
+          />
+        </picture>
       </a>
       <a class="main-header__title" href="#">
         <img
@@ -206,7 +209,7 @@
         </div>
       </section>
       <section class="live-example">
-        <div class="live-example__wrapper">
+        <div class="live-example__description-wrapper">
           <h2 class="live-example__title">Живой пример</h2>
           <p class="live-example__text">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
@@ -244,32 +247,37 @@
               </span>
             </p>
           </div>
-          <!-- Slider -->
-          <div class="live-example-plate__image-wrapper">
-            <!-- <img
-              class="live-example-plate__image"
-              src="#"
-              alt="Фотография кота до похудения."
-            /> -->
-
-            <!-- TEST SLIDER=================================================== -->
-            <!-- <div class="before-after" draggable="false">
-              <div class="images">
-                <div class="before">
-                  <img src="https://i.imgur.com/biUzxW2.png" alt="before"/>
-                </div>
-                <div class="after" draggable="false">
-                  <img src="https://i.imgur.com/hsUrYXn.png" alt="after"/>
-                </div>
-              </div>
-              <div class="controls">
-                <div class="pad"></div>
-              </div>
-            </div> -->
-            <!-- ============================================================== -->
-          </div>
         </div>
+        <!-- Slider -->
+        <div class="live-example-plate__image-wrapper">
+          <picture>
+            <source
+              srcset="./img/before-cat-tablet.png"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="./img/before-cat-tablet.png"
+              media="(min-width: 767px)"
+            />
+            <img
+              class="live-example-plate__image"
+              src="./img/before-cat-mobile.png"
+              alt="Фотография кота до похудения."
+            />
+          </picture>
 
+          <!-- Slider -->
+          <div class="slider">
+            <span class="slider__label">Было</span>
+            <span class="slider__toggle slider__toggle--before">
+              <span class="slider__toggle-button">
+                <span class="slider__toggle-button-grip"></span>
+              </span>
+            </span>
+            <span class="slider__label">Стало</span>
+          </div>
+          <!-- ==================== -->
+        </div>
       </section>
     </main>
     <footer class="main-footer">
