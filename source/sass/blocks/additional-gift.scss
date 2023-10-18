@@ -1,6 +1,6 @@
 .additional-gift {
   padding: 0 61px 0 58px;
-  background-image: url("../../img/additional-gift-bg.png");
+  background-image: url("../../img/background/additional-gift-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -22,12 +22,12 @@
 
     flex-direction: row;
     justify-content: space-around;
-    background-image: url("../../img/additional-gift-bg-tablet.png");
+    background-image: url("../../img/background/additional-gift-bg-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    background-image: url("../../img/additional-gift-bg-desktop.png");
+    background-image: url("../../img/background/additional-gift-bg-desktop.png");
 
     flex-direction: column;
     justify-content: space-around;
