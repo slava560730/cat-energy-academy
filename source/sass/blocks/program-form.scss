@@ -336,18 +336,68 @@
 }
 
 .program-form__wrapper-checkbox {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-
   @media (min-width: $tablet-width) {
     width: 33%;
   }
 }
 
 .program-form__checkbox {
-  margin: 0;
-  padding: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.program-form__checkbox-field {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special_grey;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.program-form__checkbox[type="checkbox"]:checked
+  + .program-form__checkbox-field::before,
+.program-form__checkbox[type="checkbox"]:checked
+  + .program-form__checkbox-field::after {
+  position: absolute;
+  height: 2px;
+  background-color: $basic_green;
+  content: "";
+}
+
+.program-form__checkbox[type="checkbox"]:checked
+  + .program-form__checkbox-field::before {
+  width: 11px;
+  top: 18px;
+  left: 4px;
+  transform: rotate(50deg);
+
+  @media (min-width: $tablet-width) {
+    width: 14px;
+    top: 23px;
+    left: 6px;
+  }
+}
+
+.program-form__checkbox[type="checkbox"]:checked
+  + .program-form__checkbox-field::after {
+  width: 20px;
+  top: 15px;
+  left: 9px;
+  transform: rotate(-51deg);
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    top: 19px;
+    left: 12px;
+  }
 }
 
 .program-form__form-label {
@@ -357,8 +407,13 @@
   line-height: 18px;
   text-transform: uppercase;
 
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    gap: 19px;
   }
 }
 
