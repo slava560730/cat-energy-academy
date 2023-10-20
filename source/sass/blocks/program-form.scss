@@ -292,20 +292,32 @@
 .program-form__option-input[type="radio"]:checked
   + .program-form__option-radio-button::before {
   position: absolute;
-  width: 18px;
-  height: 18px;
-  top: 12px;
-  left: 12px;
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   background-color: $basic_green;
   content: "";
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .program-form__option-radio-button {
-  width: 40px;
-  height: 40px;
+  position: relative;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid $special_grey;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .program-form__comments {
