@@ -99,7 +99,6 @@
   }
 }
 
-
 .program-form__fieldset--checkbox {
   gap: 12px;
 
@@ -261,12 +260,11 @@
 }
 
 .program-form__option {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
+  position: relative;
 }
 
 .program-form__option-label {
+  position: relative;
   color: $special_dark-grey-2;
   font-size: 16px;
   font-style: normal;
@@ -274,14 +272,40 @@
   line-height: 1.12;
   text-transform: uppercase;
 
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
 }
 
 .program-form__option-input {
-  margin: 0;
-  padding: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.program-form__option-input[type="radio"]:checked
+  + .program-form__option-radio-button::before {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 12px;
+  left: 12px;
+  border-radius: 50%;
+  background-color: $basic_green;
+  content: "";
+}
+
+.program-form__option-radio-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid $special_grey;
 }
 
 .program-form__comments {
