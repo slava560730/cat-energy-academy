@@ -8,12 +8,12 @@
 
   @media (min-width: $tablet-width) {
     color: $black;
-    min-height: 874px;
-    padding: 62px 120px 0 120px;
+    min-height: 706px;
+    padding: 62px 120px 84px 120px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 223px 190px 0 190px;
+    padding: 214px 190px 0 190px;
   }
 }
 
@@ -108,8 +108,8 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     left: 15%;
-    margin-left: -85px;
-    top: 27%;
+    margin-left: -89px;
+    top: 30%;
     margin-top: 12px;
     z-index: -1;
   }
@@ -117,7 +117,7 @@
   @media (min-width: $desktop-width) {
     left: 39%;
     margin-left: 0;
-    top: 12%;
+    top: 20%;
     margin-top: 0;
     z-index: 0;
   }

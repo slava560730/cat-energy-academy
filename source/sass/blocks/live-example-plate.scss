@@ -6,8 +6,10 @@
   align-items: center;
   gap: 30px;
 
+  padding: 0 0 40px 0;
+
   @media (min-width: $desktop-width) {
-    width: 50%;
+    width: 100%;
     justify-content: flex-start;
     gap: 42px;
   }
@@ -120,5 +122,35 @@
     width: 100%;
     flex-direction: row;
     gap: 63px;
+  }
+}
+
+.live-example-plate__image-wrapper {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 462px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    z-index: 1;
+  }
+}
+
+.live-example-plate__image {
+  width: 280px;
+  height: 232px;
+
+  margin: 0 0 23px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: -170px 0 42px 0;
+    width: 592px;
+    height: 511px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 42px 0;
   }
 }

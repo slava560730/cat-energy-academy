@@ -8,7 +8,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 60%;
+    width: 100%;
+    min-width: 907px;
     border: none;
     padding: 0 0 15px 0;
     border-bottom: 1px solid $special_grey;
@@ -24,16 +25,28 @@
   border-top: 1px solid $special_grey;
 
   @media (min-width: $tablet-width) {
-    padding: 28px 68px 0 68px;
+    margin: 0 0 28px 0;
+    padding: 28px 38px 0 38px;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 17px 0;
     padding: 15px 0 0 0;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+.additional-list__item:first-child {
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top: 1px solid $special_grey;
   }
 }
 
@@ -49,8 +62,26 @@
   }
 }
 
+.additional-list__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 25px 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 66%;
+    margin: 0;
+
+    align-items: center;
+  }
+}
+
 .additional-list__title {
-  margin: 0;
+  margin: 0 0 10px 0;
 
   color: $special_dark-grey-2;
   font-size: 16px;
@@ -58,13 +89,23 @@
   line-height: 16px;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 1;
+    word-wrap: break-word;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 20%;
+    margin: 0;
+    width: 50%;
   }
 }
 
 .additional-list__description {
-  margin: 0;
+  margin: 0 0 12px 0;
   display: flex;
   justify-content: space-between;
 
@@ -73,15 +114,22 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 33%;
+    margin: 0;
+    font-size: 16px;
+  }
 
   @media (min-width: $desktop-width) {
-    width: 30%;
+    margin: 0;
+    width: 50%;
   }
 }
 
 .additional-list__button {
   @media (min-width: $desktop-width) {
-    width: 21%;
+    width: 27%;
   }
 }
