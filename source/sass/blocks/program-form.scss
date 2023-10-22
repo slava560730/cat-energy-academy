@@ -289,8 +289,7 @@
   clip: rect(0 0 0 0);
 }
 
-.program-form__option-input[type="radio"]:checked
-  + .program-form__option-radio-button::before {
+.program-form__option-input[type="radio"]:checked + .program-form__option-radio-button::before {
   position: absolute;
   width: 14px;
   height: 14px;
@@ -374,18 +373,15 @@
   }
 }
 
-.program-form__checkbox[type="checkbox"]:checked
-  + .program-form__checkbox-field::before,
-.program-form__checkbox[type="checkbox"]:checked
-  + .program-form__checkbox-field::after {
+.program-form__checkbox[type="checkbox"]:checked + .program-form__checkbox-field::before,
+.program-form__checkbox[type="checkbox"]:checked + .program-form__checkbox-field::after {
   position: absolute;
   height: 2px;
   background-color: $basic_green;
   content: "";
 }
 
-.program-form__checkbox[type="checkbox"]:checked
-  + .program-form__checkbox-field::before {
+.program-form__checkbox[type="checkbox"]:checked + .program-form__checkbox-field::before {
   width: 11px;
   top: 18px;
   left: 4px;
@@ -398,8 +394,7 @@
   }
 }
 
-.program-form__checkbox[type="checkbox"]:checked
-  + .program-form__checkbox-field::after {
+.program-form__checkbox[type="checkbox"]:checked + .program-form__checkbox-field::after {
   width: 20px;
   top: 15px;
   left: 9px;
