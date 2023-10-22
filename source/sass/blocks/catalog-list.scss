@@ -180,6 +180,8 @@ picture {
 
   @media (min-width: $tablet-width) {
     width: 44%;
+    background-color: $white;
+    border: 1px solid $basic_grey;
   }
 
   @media (min-width: 1024px) {
@@ -224,7 +226,7 @@ picture {
 }
 
 .catalog-list__item—show-all--button {
-  margin: auto auto 13px;
+  margin: 0;
   grid-column: 1 / 4;
   grid-row: 4 / 5;
 
@@ -232,6 +234,11 @@ picture {
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
-    width: 76%;
+    grid-column: 2 / 3;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto auto 38px;
   }
 }
