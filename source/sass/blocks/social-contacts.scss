@@ -15,11 +15,10 @@
 
     flex-direction: row;
     gap: 0;
-    
   }
 
   @media (min-width: $desktop-width) {
-    padding: 63px  110px 62px 110px;
+    padding: 63px 110px 62px 110px;
   }
 }
 
@@ -42,5 +41,13 @@
     width: 33%;
     padding: 0;
     justify-content: start;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
