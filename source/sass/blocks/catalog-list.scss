@@ -30,7 +30,6 @@
   grid-template-columns: 140px 2fr 1fr;
   grid-template-rows: min-content 14px 1fr min-content;
 
-  // border-bottom: 1px solid $special_grey-2;
 
   @media (max-width: $mobile-width-only) {
     &::after {
@@ -65,7 +64,6 @@
         37px,
         auto
       );
-    // grid-template-rows: 191px min-content min-content min-content;
     grid-template-rows: 171px min-content min-content min-content;
 
     &:nth-child(even) {
@@ -84,6 +82,7 @@
       margin-top: 0;
 
       @media (min-width: $tablet-width) {
+        margin-bottom: 0;
         width: 60px;
         height: 60px;
       }
@@ -184,9 +183,16 @@ picture {
   grid-template-rows: 2fr min-content min-content min-content;
 
   @media (min-width: $tablet-width) {
+    grid-template-columns: minmax(37px, auto) minmax(159px, 431px) minmax(
+        37px,
+        auto
+      );
+    grid-template-rows: 171px min-content min-content min-content;
+
     width: 44%;
     background-color: $white;
     box-shadow: 0 0 1px 1px $basic_grey;
+    text-align: center;
   }
 
   @media (min-width: 1024px) {
@@ -219,6 +225,11 @@ picture {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 23px 0;
+    width: 134px;
+  }
 }
 
 .catalog-list__item—show-all--text {
@@ -228,6 +239,11 @@ picture {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
   justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 87px 0;
+    width: 134px;
+  }
 }
 
 .catalog-list__item—show-all--button {
