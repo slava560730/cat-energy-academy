@@ -75,10 +75,15 @@
         margin-top: -30%;
       }
     }
+  }
 
-    &:last-child {
-      .catalog-list__item-image {
-        margin-top: 0;
+  &:last-child {
+    .catalog-list__item-image {
+      width: 30px;
+      height: 30px;
+      margin-top: 0;
+
+      @media (min-width: $tablet-width) {
         width: 60px;
         height: 60px;
       }
@@ -181,7 +186,7 @@ picture {
   @media (min-width: $tablet-width) {
     width: 44%;
     background-color: $white;
-    border: 1px solid $basic_grey;
+    box-shadow: 0 0 1px 1px $basic_grey;
   }
 
   @media (min-width: 1024px) {
