@@ -81,6 +81,14 @@
     line-height: normal;
     text-transform: uppercase;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav-list--dark {
@@ -95,6 +103,16 @@
   text-decoration: underline 2px;
   text-underline-offset: 10px;
   text-decoration-color: $basic_green;
+}
+
+.main-nav-list__item--current .main-nav-list__link {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .main-nav-list__item-green-text--decoration {
