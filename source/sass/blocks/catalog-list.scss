@@ -30,7 +30,6 @@
   grid-template-columns: 140px 2fr 1fr;
   grid-template-rows: min-content 14px 1fr min-content;
 
-
   @media (max-width: $mobile-width-only) {
     &::after {
       position: absolute;
@@ -261,5 +260,9 @@ picture {
 
   @media (min-width: $desktop-width) {
     margin: auto auto 38px;
+  }
+
+  &:hover {
+    background-color: $special_grey-2;
   }
 }
