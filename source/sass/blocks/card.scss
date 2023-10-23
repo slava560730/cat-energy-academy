@@ -146,6 +146,20 @@
     font-size: 20px;
     line-height: 1;
   }
+
+  &:hover {
+    .card__link-image::before {
+      width: 26px;
+    }
+
+    .card__link-image::after {
+      right: 0;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__link-image {
@@ -166,9 +180,9 @@
     transition: width 0.3s;
   }
 
-  &:hover::before {
-    width: 26px;
-  }
+  // &:hover::before {
+  //   width: 26px;
+  // }
 
   &::after {
     position: absolute;
@@ -186,7 +200,7 @@
     transition: right 0.3s;
   }
 
-  &:hover::after {
-    right: 0;
-  }
+  // &:hover::after {
+  //   right: 0;
+  // }
 }
