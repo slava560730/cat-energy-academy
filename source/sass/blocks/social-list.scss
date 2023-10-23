@@ -19,5 +19,14 @@
 .social-list__link {
   text-decoration: none;
   padding: 10px;
-  cursor: alias;
+  cursor: pointer;
+  color: #666666;
+
+  &:hover {
+    color: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
