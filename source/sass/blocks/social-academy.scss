@@ -36,3 +36,9 @@
     color: $basic_green;
   }
 }
+
+.social-academy__item--title:active ~ .social-academy__item--logo .social-academy__image {
+  @media (min-width: $tablet-width) {
+    opacity: 0.3;
+  }
+}
