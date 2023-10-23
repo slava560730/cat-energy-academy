@@ -1,6 +1,5 @@
 .social-academy {
   width: 100%;
-  // min-width: 280px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -15,18 +14,6 @@
     width: 33%;
     justify-content: flex-end;
     gap: 22px;
-
-    &:hover {
-      .social-academy__link {
-        color: $basic_green;
-      }
-    }
-
-    &:active {
-      .social-academy__link {
-        opacity: 0.3;
-      }
-    }
   }
 }
 
@@ -40,5 +27,12 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+
+.social-academy__item--title:hover ~ .social-academy__item--logo .social-academy__image {
+  @media (min-width: $tablet-width) {
+    color: $basic_green;
   }
 }
