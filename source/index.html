@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CAT ENERGY</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./img/favicons/180x180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="page__body">
@@ -64,17 +68,26 @@
         </div>
         <picture>
           <source
-            srcset="./img/index-product-desktop.png"
+            srcset="
+              ./img/largepic/index-product-desktop.png    1x,
+              ./img/largepic/index-product-desktop@2x.png 2x
+            "
             media="(min-width: 1440px)"
           />
           <source
-            srcset="./img/index-product-tablet.png"
+            srcset="
+              ./img/largepic/index-product-tablet.png    1x,
+              ./img/largepic/index-product-tablet@2x.png 2x
+            "
             media="(min-width: 768px)"
           />
           <img
             class="functional-food__image"
-            src="./img/index-product-mobile.png"
+            src="./img/largepic/index-product-mobile.png"
+            srcset="./img/largepic/index-product-mobile@2x.png 2x"
             alt="Изображение продукта Cat Energy."
+            width="280"
+            height="270"
           />
         </picture>
 
@@ -120,13 +133,6 @@
             <a class="card__link" href="#">
               каталог slim
               <span class="card__link-image"></span>
-              <!-- <img
-                class="card__link-image"
-                src="./img/icons/right-arrow.svg"
-                width="32"
-                height="16"
-                alt="right arrow"
-              /> -->
             </a>
           </div>
           <div class="card">
@@ -162,13 +168,6 @@
             <a class="card__link" href="#">
               каталог pro
               <span class="card__link-image"></span>
-              <!-- <img
-                class="card__link-image"
-                src="./img/icons/right-arrow.svg"
-                width="32"
-                height="16"
-                alt="right arrow"
-              /> -->
             </a>
           </div>
         </div>
@@ -252,17 +251,23 @@
         <div class="live-example-plate__image-wrapper">
           <picture>
             <source
-              srcset="./img/before-cat-tablet.png"
+              srcset="./img/largepic/before-after-cat-tablet.png 1x"
               media="(min-width: 1440px)"
             />
             <source
-              srcset="./img/before-cat-tablet.png"
+              srcset="
+                ./img/largepic/before-after-cat-tablet.png    1x,
+                ./img/largepic/before-after-cat-tablet@2x.png 2x
+              "
               media="(min-width: 767px)"
             />
             <img
               class="live-example-plate__image"
-              src="./img/before-cat-mobile.png"
+              src="./img/largepic/before-after-cat-mobile.png"
+              srcset="./img/largepic/before-after-cat-mobile@2x.png 2x"
               alt="Фотография кота до похудения."
+              width="280"
+              height="232"
             />
           </picture>
 

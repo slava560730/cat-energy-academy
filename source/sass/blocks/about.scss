@@ -21,6 +21,12 @@
 
       background-color: #e6e6e6;
     }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        display: none;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
