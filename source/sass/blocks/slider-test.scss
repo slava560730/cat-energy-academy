@@ -10,9 +10,15 @@
   width: 100%;
 }
 
+.image-before {
+  clip-path: inset(0% 50% 0% 0%);
+}
+
 .image-after {
   position: absolute;
   top: -98px;
+
+  clip-path: inset(0% 0% 0% 50%);
 }
 
 .image-before,
