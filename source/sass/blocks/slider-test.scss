@@ -1,0 +1,35 @@
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-after {
+  position: absolute;
+  top: -98px;
+}
+
+.image-before,
+.image-after {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-before img,
+.image-after img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slider {
+  width: 80%;
+  margin-top: 10px;
+}

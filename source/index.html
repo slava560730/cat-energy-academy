@@ -120,7 +120,11 @@
           <div class="card">
             <h3 class="card__title">Набор массы</h3>
             <div class="card__image-wrapper">
-              <svg class="card__image card__image--mass-gain" width="67" height="28">
+              <svg
+                class="card__image card__image--mass-gain"
+                width="67"
+                height="28"
+              >
                 <use href="./img/sprite/mass-gain.svg#mass-gain-cat"></use>
               </svg>
             </div>
@@ -212,30 +216,28 @@
         </div>
         <!-- Slider -->
         <div class="live-example-plate__image-wrapper">
-          <picture>
-            <source
-              srcset="./img/largepic/before-after-cat-tablet.png 1x"
-              media="(min-width: 1440px)"
+          <div class="slider-container">
+            <div class="image-container">
+              <div class="image-before">
+                <img src="./img/cat-before.png" alt="Фотография кота до похудения" />
+              </div>
+              <div class="image-after">
+                <img src="./img/cat-after.png" alt="Фотография кота после похудения" />
+              </div>
+            </div>
+            <input
+              type="range"
+              id="slider"
+              class="slider"
+              min="0"
+              max="100"
+              step="1"
+              value="50"
             />
-            <source
-              srcset="
-                ./img/largepic/before-after-cat-tablet.png    1x,
-                ./img/largepic/before-after-cat-tablet@2x.png 2x
-              "
-              media="(min-width: 767px)"
-            />
-            <img
-              class="live-example-plate__image"
-              src="./img/largepic/before-after-cat-mobile.png"
-              srcset="./img/largepic/before-after-cat-mobile@2x.png 2x"
-              alt="Фотография кота до похудения."
-              width="280"
-              height="232"
-            />
-          </picture>
+          </div>
 
           <!-- Slider -->
-          <div class="slider">
+          <!-- <div class="slider">
             <span class="slider__label">Было</span>
             <span class="slider__toggle slider__toggle--before">
               <span class="slider__toggle-button">
@@ -243,7 +245,7 @@
               </span>
             </span>
             <span class="slider__label">Стало</span>
-          </div>
+          </div> -->
           <!-- ==================== -->
         </div>
       </section>
@@ -441,5 +443,6 @@
     </footer>
     <script src="./js/nav-toggle.js"></script>
     <script src="./js/slider-before-after.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
