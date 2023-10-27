@@ -74,6 +74,15 @@
       background-color: $basic_green;
       cursor: pointer;
     }
+
+    &::-moz-range-thumb {
+      appearance: none;
+      width: 41px;
+      height: 10px;
+      border-radius: 12px;
+      background-color: $basic_green;
+      cursor: pointer;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -115,6 +124,21 @@
       //   background-color: $basic_green;
       //   border-radius: 50%;
       // }
+    }
+
+    &::-moz-range-thumb {
+      position: relative;
+      appearance: none;
+      width: 34px;
+      height: 34px;
+      border: 1px solid #dcdcdc;
+      border-radius: 50%;
+      background-color: $white;
+      cursor: pointer;
+
+      background-image: url("../../img/icons/green-dot.svg");
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 }
