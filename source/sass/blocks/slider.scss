@@ -107,11 +107,20 @@
       border-radius: 50%;
       background-color: $white;
       cursor: pointer;
+      box-shadow: (0 1px 3px rgba(0, 0, 0, 0.16));
 
       background-image: url("../../img/icons/green-dot.svg");
       background-position: center;
       background-repeat: no-repeat;
 
+      &:hover {
+        box-shadow: (0 2px 4px rgba(0, 0, 0, 0.16));
+      }
+
+      &:active {
+        box-shadow: (0 3px 5px rgba(0, 0, 0, 0.16));
+        border: 1px solid #68b738;
+      }
 
       // &::-webkit-slider-thumb::before {
       //   position: absolute;
@@ -135,10 +144,20 @@
       border-radius: 50%;
       background-color: $white;
       cursor: pointer;
+      box-shadow: (0 1px 3px rgba(0, 0, 0, 0.16));
 
       background-image: url("../../img/icons/green-dot.svg");
       background-position: center;
       background-repeat: no-repeat;
+
+      &:hover {
+        box-shadow: (0 2px 4px rgba(0, 0, 0, 0.16));
+      }
+
+      &:active {
+        box-shadow: (0 3px 5px rgba(0, 0, 0, 0.16));
+        border: 1px solid #68b738;
+      }
     }
   }
 }
