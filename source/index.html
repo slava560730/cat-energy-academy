@@ -216,37 +216,37 @@
         </div>
         <!-- Slider -->
         <div class="live-example-plate__image-wrapper">
-          <div class="slider-container">
-            <div class="image-container">
-              <div class="image-before">
-                <img src="./img/cat-before.png" alt="Фотография кота до похудения" />
+          <div class="slider">
+            <div class="slider__wrapper">
+              <div class="slider__image-before-wrapper">
+                <img
+                  class="slider__image-before"
+                  src="./img/cat-before.png"
+                  alt="Фотография кота до похудения"
+                  width="592"
+                  height="511"
+                />
               </div>
-              <div class="image-after">
-                <img src="./img/cat-after.png" alt="Фотография кота после похудения" />
+              <div class="slider__image-after-wrapper">
+                <img
+                  class="slider__image-after"
+                  src="./img/cat-after.png"
+                  alt="Фотография кота после похудения"
+                  width="592"
+                  height="511"
+                />
               </div>
             </div>
             <input
               type="range"
               id="slider"
-              class="slider"
+              class="slider__toggle-button"
               min="0"
               max="100"
               step="1"
               value="50"
             />
           </div>
-
-          <!-- Slider -->
-          <!-- <div class="slider">
-            <span class="slider__label">Было</span>
-            <span class="slider__toggle slider__toggle--before">
-              <span class="slider__toggle-button">
-                <span class="slider__toggle-button-grip"></span>
-              </span>
-            </span>
-            <span class="slider__label">Стало</span>
-          </div> -->
-          <!-- ==================== -->
         </div>
       </section>
     </main>
