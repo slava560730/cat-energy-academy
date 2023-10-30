@@ -127,8 +127,6 @@
 
     cursor: pointer;
 
-    padding: 0 4px;
-
     &::-webkit-slider-thumb {
       position: relative;
       appearance: none;
@@ -152,18 +150,6 @@
         box-shadow: (0 3px 5px rgba(0, 0, 0, 0.16));
         border: 1px solid #68b738;
       }
-
-      // &::-webkit-slider-thumb::before {
-      //   position: absolute;
-      //   content: "";
-      //   width: 6px;
-      //   height: 6px;
-      //   top: 50%;
-      //   left: 50%;
-      //   transform: translate(-50%, -50%);
-      //   background-color: $basic_green;
-      //   border-radius: 50%;
-      // }
     }
 
     &::-moz-range-thumb {
