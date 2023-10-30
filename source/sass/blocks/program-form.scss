@@ -289,7 +289,8 @@
   clip: rect(0 0 0 0);
 }
 
-.program-form__option-input[type="radio"]:checked + .program-form__option-radio-button::before {
+.program-form__option-input[type="radio"]:checked
+  + .program-form__option-radio-button::before {
   position: absolute;
   width: 14px;
   height: 14px;
@@ -306,6 +307,17 @@
   }
 }
 
+.program-form__option-input[type="radio"]:checked
+  + .program-form__option-radio-button {
+  outline: 1px solid $basic_green;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.program-form__option-input[type="radio"]:focus
+  + .program-form__option-radio-button {
+  outline: 2px solid $black;
+}
+
 .program-form__option-radio-button {
   position: relative;
   width: 30px;
@@ -313,6 +325,10 @@
   border-radius: 50%;
   border: 1px solid $special_grey;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+
+  &:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+  }
 
   @media (min-width: $tablet-width) {
     width: 40px;
@@ -374,15 +390,18 @@
   }
 }
 
-.program-form__checkbox[type="checkbox"]:checked + .program-form__checkbox-field::before,
-.program-form__checkbox[type="checkbox"]:checked + .program-form__checkbox-field::after {
+.program-form__checkbox[type="checkbox"]:checked
+  + .program-form__checkbox-field::before,
+.program-form__checkbox[type="checkbox"]:checked
+  + .program-form__checkbox-field::after {
   position: absolute;
   height: 2px;
   background-color: $basic_green;
   content: "";
 }
 
-.program-form__checkbox[type="checkbox"]:checked + .program-form__checkbox-field::before {
+.program-form__checkbox[type="checkbox"]:checked
+  + .program-form__checkbox-field::before {
   width: 11px;
   top: 18px;
   left: 4px;
@@ -395,7 +414,8 @@
   }
 }
 
-.program-form__checkbox[type="checkbox"]:checked + .program-form__checkbox-field::after {
+.program-form__checkbox[type="checkbox"]:checked
+  + .program-form__checkbox-field::after {
   width: 20px;
   top: 15px;
   left: 9px;
