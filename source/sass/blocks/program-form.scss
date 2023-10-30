@@ -318,6 +318,27 @@
   outline: 2px solid $black;
 }
 
+.program-form__option-input[type="radio"]:disabled
+  + .program-form__option-radio-button {
+  opacity: 0.3;
+  pointer-events: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 250px;
+    height: 100%;
+    background-color: $basic_grey;
+    border-radius: 12px;
+    left: 40px;
+    opacity: 1;
+
+    @media (min-width: $tablet-width) {
+      left: 50px;
+    }
+  }
+}
+
 .program-form__option-radio-button {
   position: relative;
   width: 30px;
@@ -389,6 +410,10 @@
     height: 40px;
   }
 }
+
+// .program-form__checkbox[type="checkbox"]:focus + .program-form__checkbox-field {
+
+// }
 
 .program-form__checkbox[type="checkbox"]:checked
   + .program-form__checkbox-field::before,
