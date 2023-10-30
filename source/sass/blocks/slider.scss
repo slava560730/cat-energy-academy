@@ -9,6 +9,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 0 0 23px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 42px 0;
+  }
 }
 
 .slider__image-before-wrapper {
@@ -37,6 +42,8 @@
 .slider__image-before,
 .slider__image-after {
   display: block;
+  width: 280px;
+  height: 232px;
 
   @media (min-width: $tablet-width) {
     width: 592px;
@@ -44,9 +51,22 @@
   }
 }
 
+.slider__button-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 13px;
+  align-items: center;
+}
+
+.slider__text {
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
 .slider__toggle-button {
   width: 80%;
-  margin-top: 10px;
+  margin: 0;
   box-sizing: border-box;
 
   // transform: scaleX(-1);

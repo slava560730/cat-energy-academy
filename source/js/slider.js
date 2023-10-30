@@ -12,7 +12,7 @@ function updateSlider() {
     imageBefore.style.clipPath = `inset(0% 0% 0% 0%)`;
     imageAfter.style.clipPath = `inset(0% 0% 0% 100%)`;
   } else {
-    slider.step = "1";
+    slider.step = "0.1";
   }
 }
 
