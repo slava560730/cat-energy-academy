@@ -138,21 +138,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 0;
     width: 50%;
     z-index: 1;
-  }
-}
-
-.live-example-plate__image {
-  margin: 0 0 23px 0;
-
-  @media (min-width: $tablet-width) {
-    margin: -170px 0 42px 0;
-    width: 592px;
-    height: 511px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 0 42px 0;
   }
 }

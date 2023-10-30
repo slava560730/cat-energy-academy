@@ -56,12 +56,24 @@
   flex-wrap: nowrap;
   gap: 13px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 61px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 71px 0;
+  }
 }
 
 .slider__text {
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .slider__toggle-button {
@@ -110,7 +122,6 @@
     width: 426px;
     height: 6px;
     background-color: #dcdcdc;
-    border: 1px solid $basic_grey;
 
     border-radius: 12px;
 

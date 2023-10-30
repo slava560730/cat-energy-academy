@@ -219,22 +219,56 @@
           <div class="slider">
             <div class="slider__wrapper">
               <div class="slider__image-before-wrapper">
-                <img
-                  class="slider__image-before"
-                  src="./img/cat-before.png"
-                  alt="Фотография кота до похудения"
-                  width="592"
-                  height="511"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/slider/cat-before-desktop.png    1x,
+                      ./img/slider/cat-before-desktop@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/slider/cat-before-tablet.png      1x,
+                      ./img/largepic/cat-before-tablet@2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    class="slider__image-before"
+                    src="./img/slider/cat-before-mobile.png"
+                    srcset="./img/slider/cat-before-mobile@2x.png 2x"
+                    alt="Фотография кота до похудения"
+                    width="280"
+                    height="232"
+                  />
+                </picture>
               </div>
               <div class="slider__image-after-wrapper">
-                <img
-                  class="slider__image-after"
-                  src="./img/cat-after.png"
-                  alt="Фотография кота после похудения"
-                  width="592"
-                  height="511"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/slider/cat-after-desktop.png    1x,
+                      ./img/slider/cat-after-desktop@2x.png 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/slider/cat-after-tablet.png    1x,
+                      ./img/slider/cat-after-tablet@2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    class="slider__image-after"
+                    src="./img/slider/cat-after-mobile.png"
+                    srcset="./img/slider/cat-after-mobile@2x.png 2x"
+                    alt="Фотография кота после похудения"
+                    width="280"
+                    height="232"
+                  />
+                </picture>
               </div>
             </div>
             <div class="slider__button-wrapper">
