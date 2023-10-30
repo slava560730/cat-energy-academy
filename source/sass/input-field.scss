@@ -12,6 +12,12 @@
 }
 
 .input-field--phone {
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    appearance: none;
+  }
+  -moz-appearance: textfield;
+
   background-image: url("../img/icons/phone.svg");
   background-position: right 13px bottom 50%;
 
