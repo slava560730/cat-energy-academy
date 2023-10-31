@@ -185,15 +185,7 @@
   color: $special_dark-grey;
 
   padding: 12px 15px;
-  border: 1px solid $special_grey;
-
-  &:hover {
-    border: 1px solid $special_grey;
-  }
-
-  &:focus {
-    border: 2px solid $special_dark-grey;
-  }
+  border: 1px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
     padding: 12px 20px;

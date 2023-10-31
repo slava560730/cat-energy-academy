@@ -2,6 +2,14 @@
   background-repeat: no-repeat;
   background-position: right 15px bottom 50%;
 
+  &:hover {
+    outline: 1px solid $special_grey;
+  }
+
+  &:focus {
+    outline: 2px solid $special_dark-grey;
+  }
+
   @media (min-width: $tablet-width) {
     background-position: right 20px bottom 50%;
   }
@@ -9,6 +17,10 @@
 
 .input-field--email {
   background-image: url("../img/icons/email.svg");
+
+  &:focus {
+    background-image: url("../img/icons/email-green.svg");
+  }
 }
 
 .input-field--phone {
@@ -21,11 +33,23 @@
   background-image: url("../img/icons/phone.svg");
   background-position: right 13px bottom 50%;
 
+  &:focus {
+    background-image: url("../img/icons/phone-green.svg");
+  }
+
   @media (min-width: $tablet-width) {
     background-position: right 17px bottom 50%;
   }
 }
 
 .input-field--error {
-  border: 2px solid $status_error;
+  outline: 2px solid $status_error;
+
+  &.input-field--email {
+    background-image: url("../img/icons/email-red.svg");
+  }
+
+  &.input-field--phone {
+    background-image: url("../img/icons/phone-red.svg");
+  }
 }
