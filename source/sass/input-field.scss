@@ -25,3 +25,7 @@
     background-position: right 17px bottom 50%;
   }
 }
+
+.input-field--error {
+  border: 2px solid $status_error;
+}
