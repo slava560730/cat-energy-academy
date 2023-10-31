@@ -69,7 +69,6 @@
 .program-form__fieldset--pet-info {
   position: relative;
   margin: 0;
-  // width: 100%;
   flex-grow: 1;
   padding: 0 0 9px 0;
 
@@ -188,6 +187,14 @@
   padding: 12px 15px;
   border: 1px solid $special_grey;
 
+  &:hover {
+    border: 1px solid $special_grey;
+  }
+
+  &:focus {
+    border: 2px solid $special_dark-grey;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 12px 20px;
 
@@ -276,6 +283,15 @@
   align-items: center;
   gap: 16px;
 
+  cursor: pointer;
+
+  &:hover {
+    .program-form__option-radio-button {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+      border: 1px solid #bababa;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
@@ -318,24 +334,14 @@
   outline: 2px solid $black;
 }
 
-.program-form__option-input[type="radio"]:disabled
-  + .program-form__option-radio-button {
+.program-form__option-label--disabled {
   opacity: 0.3;
   pointer-events: none;
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 250px;
-    height: 100%;
-    background-color: $basic_grey;
-    border-radius: 12px;
-    left: 40px;
-    opacity: 1;
-
-    @media (min-width: $tablet-width) {
-      left: 50px;
-    }
+  .program-form__option-input[type="radio"]:disabled
+    + .program-form__option-radio-button {
+    opacity: 0.3;
+    pointer-events: none;
   }
 }
 
@@ -346,10 +352,6 @@
   border-radius: 50%;
   border: 1px solid $special_grey;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
-
-  &:hover {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
-  }
 
   @media (min-width: $tablet-width) {
     width: 40px;
@@ -411,9 +413,9 @@
   }
 }
 
-// .program-form__checkbox[type="checkbox"]:focus + .program-form__checkbox-field {
-
-// }
+.program-form__checkbox[type="checkbox"]:focus + .program-form__checkbox-field {
+  outline: 2px solid $black;
+}
 
 .program-form__checkbox[type="checkbox"]:checked
   + .program-form__checkbox-field::before,
@@ -464,9 +466,27 @@
   align-items: center;
   gap: 16px;
 
+  &:hover {
+    .program-form__checkbox-field {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+      border: 1px solid #bababa;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     gap: 19px;
+  }
+}
+
+.program-form__form-label--disabled {
+  opacity: 0.3;
+  pointer-events: none;
+
+  .program-form__checkbox[type="checkbox"]:disabled
+    + .program-form__checkbox-field {
+    opacity: 0.3;
+    pointer-events: none;
   }
 }
 
