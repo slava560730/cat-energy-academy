@@ -73,6 +73,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 5px;
+    text-decoration-color: #dcdcdc;
   }
 }
 
