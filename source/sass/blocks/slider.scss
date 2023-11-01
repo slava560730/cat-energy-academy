@@ -85,10 +85,6 @@
   margin: 0;
   box-sizing: border-box;
 
-  // transform: scaleX(-1);
-  // -webkit-transform: scaleX(-1);
-  //transform: scaleX(-1)позволяет инвертировать направление значений так, чтобы 100% было слева, а 0% справа.
-
   @media (max-width: $mobile-width-only) {
     appearance: none;
     width: 85px;
