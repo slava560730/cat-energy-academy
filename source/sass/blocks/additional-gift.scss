@@ -33,6 +33,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    gap: 0;
     background-image: image-set(
       url("../../img/background/additional-gift-bg-desktop.png") 1x,
       url("../../img/background/additional-gift-bg-desktop@2x.png") 2x
@@ -58,6 +59,7 @@
   }
 
   @media (min-width: $laptop) {
+    width: 65%;
     text-align: center;
   }
 }
