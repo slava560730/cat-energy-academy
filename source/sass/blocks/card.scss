@@ -212,10 +212,6 @@
     transition: width 0.3s;
   }
 
-  // &:hover::before {
-  //   width: 26px;
-  // }
-
   &::after {
     position: absolute;
     content: "";
