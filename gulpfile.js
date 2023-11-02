@@ -7,6 +7,7 @@ import rename from "gulp-rename";
 import autoprefixer from "autoprefixer";
 import browser from "browser-sync";
 import htmlmin from "gulp-htmlmin";
+import terser from "terser";
 
 // Styles
 
@@ -30,13 +31,16 @@ export const html = () => {
 };
 
 // Scripts
-
+export const scripts = () => {
+  return gulp
+    .src("source/js/*.js")
+    .pipe(terser())
+    .pipe(gulp.dest("build/js"));
+};
 
 // Images
 
-
 // WebP
-
 
 // SVG
 
@@ -61,4 +65,4 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", browser.reload);
 };
 
-export default gulp.series(html, styles, server, watcher);
+export default gulp.series(html, styles, scripts, server, watcher);
