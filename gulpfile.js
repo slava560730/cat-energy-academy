@@ -3,6 +3,7 @@ import plumber from "gulp-plumber";
 import sass from "gulp-dart-sass";
 import postcss from "gulp-postcss";
 import csso from "postcss-csso";
+import rename from "gulp-rename";
 import autoprefixer from "autoprefixer";
 import browser from "browser-sync";
 
@@ -13,7 +14,8 @@ export const styles = () => {
     .src("source/sass/style.scss", { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on("error", sass.logError))
-    .pipe(postcss([autoprefixer()]))
+    .pipe(postcss([autoprefixer(), csso()]))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest("source/css", { sourcemaps: "." }))
     .pipe(browser.stream());
 };
