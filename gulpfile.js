@@ -5,9 +5,10 @@ import postcss from "gulp-postcss";
 import csso from "postcss-csso";
 import rename from "gulp-rename";
 import autoprefixer from "autoprefixer";
+import squoosh from "gulp-libsquoosh;"
 import browser from "browser-sync";
 import htmlmin from "gulp-htmlmin";
-import terser from "terser";
+import terser from "gulp-terser";
 
 // Styles
 
@@ -41,6 +42,11 @@ export const scripts = () => {
 // Images
 
 // WebP
+const images = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+  .pipe()
+  .pipe(gulp.dest("build/img"))
+}
 
 // SVG
 
