@@ -7,6 +7,7 @@ import rename from "gulp-rename";
 import autoprefixer from "autoprefixer";
 import squoosh from "gulp-libsquoosh";
 import svgo from "gulp-svgmin";
+import svgstore from "gulp-svgstore"
 import browser from "browser-sync";
 import htmlmin from "gulp-htmlmin";
 import terser from "gulp-terser";
