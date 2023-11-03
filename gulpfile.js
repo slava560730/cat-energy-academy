@@ -11,6 +11,7 @@ import svgstore from "gulp-svgstore";
 import browser from "browser-sync";
 import htmlmin from "gulp-htmlmin";
 import terser from "gulp-terser";
+import { deleteAsync as del } from "del";
 
 // Styles
 
@@ -65,7 +66,7 @@ export const copyImages = () => {
 
 // WebP
 
-export const createWebP = () => {
+const createWebP = () => {
   return gulp
     .src("source/img/**/*.{jpg,png}")
     .pipe(squoosh({ webp: {} }))
@@ -81,8 +82,8 @@ const svg = () => {
     .pipe(gulp.dest("build/img"));
 };
 
-const sprite = () => {
-  gulp
+export const sprite = () => {
+  return gulp
     .src("source/img/sprite/*.svg")
     .pipe(svgo())
     .pipe(svgstore({ inlineSvg: true }))
@@ -92,13 +93,22 @@ const sprite = () => {
 
 // Copy
 
-const copy = (done) => {
-  gulp
-    .src(["source/fonts/*.{woff2,woff}", "source/*.ico"], {
-      base: "source",
-    })
+export const copy = (done) => {
+  return gulp
+    .src(
+      ["source/fonts/*.{woff2,woff}", "source/*.ico", "source/*.webmanifest"],
+      {
+        base: "source",
+      }
+    )
     .pipe(gulp.dest("build"));
   done();
+};
+
+// Clean
+
+export const clean = () => {
+  return del("build");
 };
 
 // Server
