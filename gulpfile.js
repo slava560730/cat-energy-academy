@@ -7,7 +7,7 @@ import rename from "gulp-rename";
 import autoprefixer from "autoprefixer";
 import squoosh from "gulp-libsquoosh";
 import svgo from "gulp-svgmin";
-import svgstore from "gulp-svgstore"
+import svgstore from "gulp-svgstore";
 import browser from "browser-sync";
 import htmlmin from "gulp-htmlmin";
 import terser from "gulp-terser";
@@ -82,9 +82,12 @@ const svg = () => {
 };
 
 const sprite = () => {
-  gulp.src("source/img/sprite/*.svg")
-  .pipe()
-  .pipe(gulp.dest("build/img"));
+  gulp
+    .src("source/img/sprite/*.svg")
+    .pipe(svgo())
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
 };
 
 // Copy
