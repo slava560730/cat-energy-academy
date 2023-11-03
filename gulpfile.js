@@ -15,7 +15,7 @@ import { deleteAsync as del } from "del";
 
 // Styles
 
-const styles = () => {
+export const styles = () => {
   return gulp
     .src("source/sass/style.scss", { sourcemaps: true })
     .pipe(plumber())
@@ -60,7 +60,7 @@ const optimizeImages = () => {
     .pipe(gulp.dest("build/img"));
 };
 
-export const copyImages = () => {
+const copyImages = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}").pipe(gulp.dest("build/img"));
 };
 
@@ -82,7 +82,7 @@ const svg = () => {
     .pipe(gulp.dest("build/img"));
 };
 
-export const sprite = () => {
+const sprite = () => {
   return gulp
     .src("source/img/sprite/*.svg")
     .pipe(svgo())
@@ -93,7 +93,7 @@ export const sprite = () => {
 
 // Copy
 
-export const copy = (done) => {
+const copy = (done) => {
   return gulp
     .src(
       ["source/fonts/*.{woff2,woff}", "source/*.ico", "source/*.webmanifest"],
@@ -107,7 +107,7 @@ export const copy = (done) => {
 
 // Clean
 
-export const clean = () => {
+const clean = () => {
   return del("build");
 };
 
@@ -131,6 +131,10 @@ const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/*.html").on("change", browser.reload);
 };
+
+// Build
+
+const build = gulp.series(clean);
 
 export default gulp.series(
   html,
