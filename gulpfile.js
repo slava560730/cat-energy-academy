@@ -60,12 +60,12 @@ export const copyImages = () => {
 
 // WebP
 
-export const webP = () => {
-  return gulp.src("source/img/**/*.{jpg,png}")
-  .pipe()
-  .pipe(gulp.dest("build/img"))
-}
-
+export const createWebP = () => {
+  return gulp
+    .src("source/img/**/*.{jpg,png}")
+    .pipe(squoosh({ webp: {} }))
+    .pipe(gulp.dest("build/img"));
+};
 
 // SVG
 
@@ -90,4 +90,11 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", browser.reload);
 };
 
-export default gulp.series(html, copyStyles, copyImages, scripts, server, watcher);
+export default gulp.series(
+  html,
+  copyStyles,
+  copyImages,
+  scripts,
+  server,
+  watcher
+);
