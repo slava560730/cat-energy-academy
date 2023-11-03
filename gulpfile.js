@@ -6,6 +6,7 @@ import csso from "postcss-csso";
 import rename from "gulp-rename";
 import autoprefixer from "autoprefixer";
 import squoosh from "gulp-libsquoosh";
+import svgo from "gulp-svgmin";
 import browser from "browser-sync";
 import htmlmin from "gulp-htmlmin";
 import terser from "gulp-terser";
@@ -34,6 +35,7 @@ const copyStyles = () => {
 };
 
 // HTML
+
 const html = () => {
   return gulp
     .src("source/*.html")
@@ -42,11 +44,13 @@ const html = () => {
 };
 
 // Scripts
+
 const scripts = () => {
   return gulp.src("source/js/*.js").pipe(terser()).pipe(gulp.dest("build/js"));
 };
 
 // Images
+
 const optimizeImages = () => {
   return gulp
     .src("source/img/**/*.{jpg,png}")
@@ -68,6 +72,30 @@ export const createWebP = () => {
 };
 
 // SVG
+
+const svg = () => {
+  return gulp
+    .src(["source/img/icons/*.sgv", "!source/img/sprite/*.svg"])
+    .pipe(svgo())
+    .pipe(gulp.dest("build/img"));
+};
+
+const sprite = () => {
+  gulp.src("source/img/sprite/*.svg")
+  .pipe()
+  .pipe(gulp.dest("build/img"));
+};
+
+// Copy
+
+const copy = (done) => {
+  gulp
+    .src(["source/fonts/*.{woff2,woff}", "source/*.ico"], {
+      base: "source",
+    })
+    .pipe(gulp.dest("build"));
+  done();
+};
 
 // Server
 
