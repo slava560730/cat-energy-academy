@@ -48,7 +48,7 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/*.js").pipe(terser()).pipe(gulp.dest("build/js"));
+  return gulp.src(["source/js/*.js", "!source/js/check-overflow-content.js"]).pipe(terser()).pipe(gulp.dest("build/js"));
 };
 
 // Images
@@ -148,7 +148,7 @@ export const build = gulp.series(
 export default gulp.series(
   clean,
   copy,
-  copyImages,
+  optimizeImages,
   gulp.parallel(styles, html, scripts, svg, sprite),
   gulp.series(server, watcher)
 );
