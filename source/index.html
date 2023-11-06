@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Магазин здорового питания для котов." />
     <title>CAT ENERGY</title>
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml" />
@@ -25,6 +26,8 @@
           <img
             class="main-header__logo-image"
             src="./img/logo/logo-mobile.svg"
+            width="34"
+            height="38"
             alt="#"
           />
         </picture>
@@ -33,6 +36,8 @@
         <img
           class="main-header__title-logo"
           src="./img/logo/logo-title.svg"
+          width="101px"
+          height="18"
           alt="#"
         />
       </a>
@@ -271,7 +276,7 @@
               </div>
             </div>
             <div class="slider__button-wrapper">
-              <span class="slider__text">Было</span>
+              <label for="slider-start" class="slider__text">Было</label>
               <input
                 type="range"
                 id="slider"
@@ -280,8 +285,9 @@
                 max="100"
                 step="1"
                 value="50"
+                aria-labelledby="slider-start slider-end"
               />
-              <span class="slider__text">Стало</span>
+              <label for="slider-end" class="slider__text">Стало</label>
             </div>
           </div>
         </div>
@@ -312,6 +318,7 @@
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            title="Карта магазина"
           ></iframe>
         </div>
       </section>
