@@ -57,6 +57,18 @@
   }
 }
 
+.main-header__logo-image {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 60px;
+  }
+}
+
 .main-header__title-logo {
   @media (min-width: $tablet-width) {
     display: none;
