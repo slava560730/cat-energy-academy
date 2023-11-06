@@ -6,7 +6,7 @@ import csso from "postcss-csso";
 import rename from "gulp-rename";
 import autoprefixer from "autoprefixer";
 import squoosh from "gulp-libsquoosh";
-import svgo from "gulp-svgmin";
+import svgmin from "gulp-svgmin";
 import svgstore from "gulp-svgstore";
 import browser from "browser-sync";
 import htmlmin from "gulp-htmlmin";
@@ -61,7 +61,8 @@ const optimizeImages = () => {
 };
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}").pipe(gulp.dest("build/img"));
+  // return gulp.src("source/img/**/*.{jpg,png,svg}").pipe(gulp.dest("build/img"));
+  return gulp.src("source/img/**/*.{jpg,png}").pipe(gulp.dest("build/img"));
 };
 
 // WebP
@@ -77,15 +78,15 @@ const createWebP = () => {
 
 const svg = () => {
   return gulp
-    .src(["source/img/icons/*.sgv", "!source/img/sprite/*.svg"])
-    .pipe(svgo())
+    .src(["source/img/**/*.svg", "!source/img/sprite/*.svg"])
+    .pipe(svgmin())
     .pipe(gulp.dest("build/img"));
 };
 
 const sprite = () => {
   return gulp
-    .src("source/img/sprite/*.svg")
-    .pipe(svgo())
+    .src(["source/img/sprite/*.svg", "!source/img/icons/*.svg"])
+    .pipe(svgmin())
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
@@ -129,6 +130,7 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/*.html").on("change", html);
   gulp.watch("source/*.html").on("change", browser.reload);
 };
 
@@ -138,7 +140,7 @@ export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
-  gulp.parallel(styles, html, scripts, svg, sprite, createWebP)
+  gulp.parallel(styles, html, scripts, svg, sprite)
 );
 
 // Default
@@ -147,6 +149,6 @@ export default gulp.series(
   clean,
   copy,
   copyImages,
-  gulp.parallel(styles, html, scripts, svg, sprite, createWebP),
+  gulp.parallel(styles, html, scripts, svg, sprite),
   gulp.series(server, watcher)
 );
