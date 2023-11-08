@@ -12,6 +12,11 @@
     padding: 0 0 80px 0;
   }
 
+  @media (min-width: $tablet-width) {
+    gap: 41px;
+    justify-content: unset;
+  }
+
   @media (min-width: $desktop-width) {
     width: 100%;
     justify-content: flex-start;
@@ -44,6 +49,11 @@
 .live-example-plate__value {
   font-size: 24px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 1.23;
+  }
 }
 
 .live-example-plate__text {

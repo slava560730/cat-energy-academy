@@ -14,7 +14,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 137px;
+    gap: 150px;
     row-gap: 37px;
   }
 
@@ -39,6 +39,7 @@
     min-height: 280px;
     align-items: normal;
     flex-direction: column;
+    gap: 32px;
   }
 
   @media (min-width: $laptop) {
@@ -60,8 +61,12 @@
     position: absolute;
     color: $basic_grey;
     z-index: -1;
-    top: -80px;
-    right: 0;
+    top: -78px;
+    right: -14px;
+  }
+
+  .about-list__item:first-child::after {
+    right: 4px;
   }
 }
 

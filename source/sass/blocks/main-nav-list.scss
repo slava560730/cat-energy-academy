@@ -12,7 +12,7 @@
     width: 440px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,7 +101,7 @@
   }
 
   text-decoration: underline 2px;
-  text-underline-offset: 10px;
+  text-underline-offset: 13px;
   text-decoration-color: $basic_green;
 }
 

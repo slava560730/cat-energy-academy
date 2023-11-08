@@ -12,7 +12,7 @@
   grid-template-rows: min-content 1fr min-content;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 62px 57px 52px;
+    padding: 77px 62px 62px 52px;
     grid-template-areas:
       "title title image"
       "text text image"
@@ -46,7 +46,7 @@
   // letter-spacing: -0.6px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 0 0;
+    margin: -8px 0 0 0;
     font-size: 36px;
     justify-self: flex-start;
   }
@@ -80,11 +80,21 @@
 .card__text--weight-lose {
   padding: 0 0 22px;
   margin: 22px 0 19px;
+
+  @media (min-width: $tablet-width) {
+    margin: 12px 0 35px;
+    padding: 0 60px 22px 0;
+  }
 }
 
 .card__text--mass-gain {
   padding: 0 0 21px;
   margin: 24px 0 19px;
+
+  @media (min-width: $tablet-width) {
+    margin: 14px 0 35px;
+    padding: 0 50px 21px 0;
+  }
 }
 
 .card__image-wrapper {
@@ -105,6 +115,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin: 15px 0 0 0;
     width: 200px;
     height: 200px;
   }
@@ -192,6 +203,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1;
+
+    gap: 22px;
   }
 
   &:hover {

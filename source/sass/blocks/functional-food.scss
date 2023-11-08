@@ -9,7 +9,7 @@
   @media (min-width: $tablet-width) {
     color: $black;
     min-height: 706px;
-    padding: 62px 120px 84px 120px;
+    padding: 51px 120px 104px 120px;
   }
 
   @media (min-width: $desktop-width) {
@@ -116,9 +116,9 @@
     width: 709px;
     height: 609px;
     position: absolute;
-    left: 15%;
-    margin-left: -89px;
-    top: 30%;
+    left: 28%;
+    margin-left: -186px;
+    top: 28%;
     margin-top: 12px;
     z-index: -1;
   }
@@ -151,6 +151,8 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     align-self: start;
-    padding: 18px 55px;
+    padding: 17px 27px;
+    font-size: 20px;
+    line-height: 1;
   }
 }
