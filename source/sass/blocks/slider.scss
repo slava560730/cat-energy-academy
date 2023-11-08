@@ -54,8 +54,8 @@
 .slider__button-wrapper {
   display: flex;
   flex-wrap: nowrap;
-  gap: 13px;
-  align-items: center;
+  gap: 18px;
+  // align-items: center;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 61px 0;
@@ -70,8 +70,10 @@
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
+  margin: -3px 0 0 0;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     font-size: 20px;
     text-decoration: underline;
     text-decoration-style: dotted;
@@ -96,12 +98,12 @@
 
     cursor: pointer;
 
-    padding: 0 4px;
+    padding: 0 6px;
 
     &::-webkit-slider-thumb {
       appearance: none;
-      width: 41px;
-      height: 10px;
+      width: 36px;
+      height: 6px;
       border-radius: 12px;
       background-color: $basic_green;
       cursor: pointer;
@@ -109,8 +111,8 @@
 
     &::-moz-range-thumb {
       appearance: none;
-      width: 41px;
-      height: 10px;
+      width: 36px;
+      height: 6px;
       border-radius: 12px;
       background-color: $basic_green;
       cursor: pointer;

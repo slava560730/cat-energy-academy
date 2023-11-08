@@ -28,12 +28,12 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 20px;
-  right: 21px;
-  width: 22px;
-  height: 2px;
+  top: 21px;
+  right: 20px;
+  width: 24px;
+  height: 3px;
   background-color: $black;
-  box-shadow: 0 7px 0 0 $black, 0 14px 0 0 $black;
+  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {

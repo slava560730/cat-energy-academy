@@ -19,7 +19,7 @@
 
 .functional-food__wrapper {
   @media (max-width: $mobile-width-only) {
-    height: 302px;
+    min-height: 302px;
     display: flex;
     flex-direction: column;
     background-image: image-set(
@@ -65,7 +65,7 @@
 }
 
 .functional-food__title {
-  margin: 27px 0 25px 0;
+  margin: 26px 0 24px 0;
   padding: 0 35px 0 36px;
 
   font-size: 36px;

@@ -1,7 +1,7 @@
 .social-academy {
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 8px 0 0 0;
   list-style: none;
 
   display: flex;
@@ -13,6 +13,7 @@
   @media (min-width: $tablet-width) {
     width: 33%;
     justify-content: flex-end;
+    padding: 0;
     gap: 22px;
   }
 }
