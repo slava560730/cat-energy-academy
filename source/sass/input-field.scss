@@ -41,7 +41,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-position: right 17px bottom 50%;
+    padding: 6px 10px 10px 14px;
+    background-position: right 12px bottom 50%;
   }
 }
 
@@ -51,6 +52,11 @@
   &.input-field--email {
     padding: 12px 10px 12px 10px;
     background-image: url("../img/icons/email-red.svg");
+
+    @media (min-width: $tablet-width) {
+      padding: 8px 20px;
+      background-position: right 13px bottom 50%;
+    }
   }
 
   &.input-field--phone {
