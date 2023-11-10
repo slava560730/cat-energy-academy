@@ -21,16 +21,24 @@
 }
 
 .slider__image-before-wrapper {
-  margin: 0 -55px 0 0;
+  margin: 0 0 0 0;
   clip-path: inset(0% 54% 0% 0%);
+
+  @media (min-width: $tablet-width) {
+    margin: 0 -55px 0 0;
+  }
 }
 
 .slider__image-after-wrapper {
   position: absolute;
   top: 0;
+  margin: 0;
 
-  margin: 0 0 0 55px;
   clip-path: inset(0% 0% 0% 46%);
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 55px;
+  }
 }
 
 .slider__image-before-wrapper,

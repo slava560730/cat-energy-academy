@@ -6,7 +6,7 @@
 }
 
 .program-form__fieldset {
-  margin: 0 0 25px 0;
+  margin: 0 0 27px 0;
   padding: 0;
   border: none;
 
@@ -21,7 +21,7 @@
 .program-form__fieldset--option {
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 9px;
 
   padding: 22px 0 20px 0;
   margin: 0;
@@ -123,8 +123,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 14px;
-  margin: 0 0 14px 0;
+  gap: 16px;
+  margin: 0 0 16px 0;
   width: 100%;
   max-width: 628px;
 
@@ -184,7 +184,7 @@
 
   color: $special_dark-grey;
 
-  padding: 12px 15px;
+  padding: 12px 10px 12px 14px;
   border: 1px solid #e7e7e7;
 
   &:hover {
@@ -211,7 +211,7 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.1;
 
   @media (min-width: $tablet-width) {
     padding: 0 39px 0 39px;
@@ -227,9 +227,16 @@
   }
 }
 
+.program-form--cat-owner-title {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    margin-right: 55px;
+  }
+}
+
 .programm-form__title-wrapper {
   position: relative;
-  margin: 0 0 37px 0;
+  margin: 0 0 35px 0;
 
   &::after {
     position: absolute;
@@ -262,6 +269,16 @@
       top: 50%;
       left: -110px;
       z-index: -1;
+    }
+  }
+}
+
+.program-form--cat-owner-title-wrapper {
+  padding: 0 22px 0 0;
+
+  @media (max-width: 480px) {
+    &::after {
+      top: 30%;
     }
   }
 }
@@ -360,7 +377,7 @@
 }
 
 .program-form__comments {
-  margin: 0 0 23px 0;
+  margin: 0 0 24px 0;
   display: flex;
   flex-direction: column;
 }
@@ -402,6 +419,7 @@
 
 .program-form__checkbox-field {
   display: block;
+  box-sizing: border-box;
   position: relative;
   width: 30px;
   height: 30px;
@@ -509,7 +527,7 @@
 }
 
 .program-form__submit-button {
-  margin: 0;
+  margin: 6px 0 0 0;
 
   font-family: "Oswald Regular", $arial;
   font-size: 16px;
@@ -526,6 +544,7 @@
 
 .program-form__required-fields-text {
   align-self: center;
+  font-family: $arial;
 
   @media (min-width: $tablet-width) {
     width: 50%;

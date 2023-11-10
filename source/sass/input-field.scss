@@ -24,10 +24,13 @@
 }
 
 .input-field--phone {
+  padding: 13px 10px 12px 10px;
+
   &::-webkit-inner-spin-button,
   &::-webkit-outer-spin-button {
     appearance: none;
   }
+
   -moz-appearance: textfield;
 
   background-image: url("../img/icons/phone.svg");
@@ -46,6 +49,7 @@
   outline: 2px solid $status_error;
 
   &.input-field--email {
+    padding: 12px 10px 12px 10px;
     background-image: url("../img/icons/email-red.svg");
   }
 

@@ -53,7 +53,7 @@
 
 .main-nav-list__link {
   width: 100%;
-  padding: 22px 0 24px 0;
+  padding: 22px 0 23px;
   color: $black;
   background-color: $white;
 
@@ -64,6 +64,10 @@
   text-transform: uppercase;
   display: block;
   text-decoration: none;
+
+  @media (max-width: $mobile-width-only) {
+    letter-spacing: 0.6px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -93,6 +97,14 @@
 
 .main-nav-list--dark {
   color: $black;
+}
+
+.main-nav-list__item {
+  &:first-child {
+    @media (max-width: $mobile-width-only) {
+      border-top: 1px solid #e6e6e6;
+    }
+  }
 }
 
 .main-nav-list__item--current {

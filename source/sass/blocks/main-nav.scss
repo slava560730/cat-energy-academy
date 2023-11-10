@@ -9,7 +9,7 @@
   @media (max-width: $mobile-width-only) {
     width: 100%;
     position: absolute;
-    top: 66px;
+    top: 65px;
     left: 0;
     z-index: 1;
   }
@@ -25,10 +25,14 @@
   }
 }
 
+.main-nav--closed .main-nav__toggle {
+  padding: 0;
+}
+
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 22px;
+  top: 24px;
   right: 20px;
   width: 24px;
   height: 2px;
@@ -47,9 +51,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: -38px;
-    right: 21px;
-    width: 22px;
+    top: -35px;
+    right: 20px;
+    width: 25px;
     height: 2px;
     background-color: #000000;
   }
