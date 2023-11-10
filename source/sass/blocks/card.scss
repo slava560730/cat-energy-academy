@@ -24,7 +24,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    padding: 41px 51px 59px 52px;
+    padding: 41px 51px 64px 52px;
     grid-template-areas:
       "image title title"
       "text text text"
@@ -71,10 +71,6 @@
     font-size: 16px;
     line-height: 1.5;
   }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 0 23px 0;
-  }
 }
 
 .card__text--weight-lose {
@@ -85,6 +81,11 @@
     margin: 12px 0 35px;
     padding: 0 60px 22px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 41px 0 30px;
+    padding: 0 0 0 0;
+  }
 }
 
 .card__text--mass-gain {
@@ -94,6 +95,11 @@
   @media (min-width: $tablet-width) {
     margin: 14px 0 35px;
     padding: 0 50px 21px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 41px 0 30px;
+    padding: 0 0 0 0;
   }
 }
 
@@ -121,6 +127,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 6px 0 0;
     width: 100px;
     height: 100px;
   }

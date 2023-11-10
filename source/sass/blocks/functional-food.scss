@@ -13,7 +13,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 214px 190px 0 190px;
+    padding: 222px 190px 0 190px;
+    min-height: 480px;
   }
 }
 
@@ -127,7 +128,7 @@
     width: 552px;
     height: 499px;
     left: 39%;
-    margin-left: 0;
+    margin-left: -4px;
     top: 20%;
     margin-top: 0;
     z-index: 0;
