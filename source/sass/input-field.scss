@@ -16,7 +16,17 @@
 }
 
 .input-field--email {
+  padding: 12px 10px 12px 10px;
   background-image: url("../img/icons/email.svg");
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 20px;
+    background-position: right 13px bottom 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: right 18px bottom 50%;
+  }
 
   &:focus {
     background-image: url("../img/icons/email-green.svg");
@@ -44,19 +54,17 @@
     padding: 6px 10px 10px 14px;
     background-position: right 12px bottom 50%;
   }
+
+  @media (min-width: $desktop-width) {
+    background-position: right 15px bottom 50%;
+  }
 }
 
 .input-field--error {
   outline: 2px solid $status_error;
 
   &.input-field--email {
-    padding: 12px 10px 12px 10px;
     background-image: url("../img/icons/email-red.svg");
-
-    @media (min-width: $tablet-width) {
-      padding: 8px 20px;
-      background-position: right 13px bottom 50%;
-    }
   }
 
   &.input-field--phone {

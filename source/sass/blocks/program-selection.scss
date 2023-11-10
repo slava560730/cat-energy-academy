@@ -43,4 +43,9 @@
 
     margin: 0 0 64px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 32%;
+    margin: 0 0 64px;
+  }
 }
