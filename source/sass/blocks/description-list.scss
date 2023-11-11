@@ -15,6 +15,10 @@
 
     gap: 8px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 33px 4px;
+  }
 }
 
 .description-list__item {

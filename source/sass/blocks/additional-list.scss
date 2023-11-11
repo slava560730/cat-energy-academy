@@ -30,7 +30,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 17px 0;
+    margin: 0 0 16px 0;
     padding: 15px 0 0 0;
 
     display: flex;
@@ -124,13 +124,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    width: 50%;
+    margin: 7px 0 0 20px;
+    width: 46%;
   }
 }
 
 .additional-list__button {
   @media (min-width: $desktop-width) {
     width: 27%;
+    margin-right: 12px;
   }
 }

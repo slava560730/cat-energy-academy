@@ -129,6 +129,11 @@
     width: 62%;
     text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 80%;
+    margin: -10px 0 23px 0;
+  }
 }
 
 picture {
@@ -213,6 +218,7 @@ picture {
   @media (min-width: $desktop-width) {
     max-width: 20%;
     min-height: 429px;
+    max-height: 431px;
   }
 
   @media (min-width: 1980px) {
@@ -258,6 +264,10 @@ picture {
 
     font-size: 16px;
     line-height: 1.12;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
