@@ -63,6 +63,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 72px 0;
+
     &::before {
       position: absolute;
       content: "";
@@ -83,7 +85,7 @@
   gap: 35px;
 
   @media (min-width: $tablet-width) {
-    gap: 69px;
+    gap: 67px;
   }
 
   @media (min-width: $desktop-width) {
