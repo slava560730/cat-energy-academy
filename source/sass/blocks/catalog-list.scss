@@ -6,7 +6,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 19px;
+  gap: 17px;
 
   @media (min-width: $tablet-width) {
     gap: 60px;
@@ -21,14 +21,15 @@
 }
 
 .catalog-list__item {
+  box-sizing: border-box;
   position: relative;
   width: 100%;
-  margin: 0 0 0 0;
-  padding: 0 0 24px 0;
-
+  min-height: 165px;
+  margin: 0;
+  padding: 0 0 29px;
   display: grid;
-  grid-template-columns: 50% 26% 24%;
-  grid-template-rows: min-content 14px 1fr min-content;
+  grid-template-columns: 50% 27% 23%;
+  grid-template-rows: min-content 11px 1fr min-content;
 
   @media (max-width: $mobile-width-only) {
     &::after {
@@ -128,6 +129,7 @@ picture {
   grid-column: 1 / 2;
   grid-row: 1 / 4;
   text-align: center;
+  align-self: self-end;
 
   @media (min-width: $tablet-width) {
     grid-area: image;
@@ -138,7 +140,7 @@ picture {
 .catalog-list__item-image {
   grid-column: 1 / 2;
   grid-row: 1 / 4;
-  padding: 14px 36px 12px 36px;
+  // padding: 14px 36px 12px 36px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -153,7 +155,7 @@ picture {
 
 .catalog-list__button {
   width: 100%;
-  margin: 13px 0 0 0;
+  margin: 19px 0 0 0;
   padding: 10px 0;
   grid-row: 4 / 5;
   grid-column: 1 / -1;
@@ -180,6 +182,8 @@ picture {
   display: grid;
   grid-template-columns: auto max-content auto;
   grid-template-rows: 2fr min-content min-content min-content;
+
+  padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: minmax(37px, auto) minmax(159px, 431px) minmax(
@@ -210,7 +214,7 @@ picture {
 }
 
 .catalog-list__item—show-all--image {
-  margin: 0 0 23px 0;
+  margin: 0 0 25px 0;
   padding: 0;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
@@ -238,6 +242,9 @@ picture {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
   justify-self: center;
+
+  font-family: $arial;
+  font-size: 12px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 87px 0;
