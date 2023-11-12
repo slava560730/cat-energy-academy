@@ -247,6 +247,7 @@
 .program-form--cat-owner-title {
   @media (max-width: $mobile-width-only) {
     display: block;
+    max-width: 350px;
     margin-right: 55px;
   }
 }
