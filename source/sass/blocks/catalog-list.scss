@@ -71,7 +71,7 @@
       .catalog-list__item-image {
         width: 172px;
         height: 202px;
-        margin-top: -30%;
+        margin-bottom: 46px;
       }
     }
   }
@@ -141,7 +141,7 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  text-wrap: balance;
+  // text-wrap: balance;
 
   @media (min-width: $tablet-width) {
     grid-area: title;
@@ -189,8 +189,8 @@ picture {
     margin: 0 0 40px 0;
   }
 
-  @media (min-width: $tablet-width) {
-    margin: 0 0 45px;
+  @media (min-width: $desktop-width) {
+    margin: 0 0 48px;
   }
 }
 
