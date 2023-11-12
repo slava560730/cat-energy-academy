@@ -131,6 +131,7 @@ const server = (done) => {
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/*.html").on("change", html);
+  gulp.watch("source/js/*.js").on("change", gulp.series(scripts, browser.reload));
   gulp.watch("source/*.html").on("change", browser.reload);
 };
 
