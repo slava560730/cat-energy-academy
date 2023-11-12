@@ -6,7 +6,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 17px;
+  gap: 19px;
 
   @media (min-width: $tablet-width) {
     gap: 60px;
@@ -26,7 +26,7 @@
   width: 100%;
   min-height: 165px;
   margin: 0;
-  padding: 0 0 29px;
+  padding: 0 0 25px;
   display: grid;
   grid-template-columns: 50% 27% 23%;
   grid-template-rows: min-content 11px 1fr min-content;
@@ -46,6 +46,7 @@
       .catalog-list__item-image {
         width: 84px;
         height: 100px;
+        margin: 0 0 -9px 0;
       }
     }
   }
@@ -79,7 +80,7 @@
     .catalog-list__item-image {
       width: 30px;
       height: 30px;
-      margin-top: 0;
+      margin: 7px 0 23px 0;
 
       @media (min-width: $tablet-width) {
         margin-bottom: 0;
@@ -113,13 +114,14 @@
   grid-row: 1 / 2;
   display: block;
   text-align: start;
+  margin: 0 0 5px 0;
 
   @media (min-width: $tablet-width) {
     grid-area: title;
     text-align: -webkit-center;
     margin: -12px 0 23px;
   }
-  
+
   @media (min-width: $desktop-width) {
     margin: -9px 0 23px 4px;
   }
@@ -175,7 +177,7 @@ picture {
 .catalog-list__item-image {
   grid-column: 1 / 2;
   grid-row: 1 / 4;
-  // padding: 14px 36px 12px 36px;
+  margin: 0 0 0 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -194,7 +196,7 @@ picture {
 
 .catalog-list__button {
   width: 100%;
-  margin: 19px 0 0 0;
+  margin: 21px 0 0 0;
   padding: 10px 0;
   grid-row: 4 / 5;
   grid-column: 1 / -1;
@@ -207,7 +209,7 @@ picture {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.25;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
