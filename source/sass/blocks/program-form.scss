@@ -21,9 +21,9 @@
 .program-form__fieldset--option {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 13px;
 
-  padding: 22px 0 20px 0;
+  padding: 22px 0 17px 0;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -35,7 +35,7 @@
   @media (min-width: $desktop-width) {
     flex-grow: 1;
     padding: 25px 24px;
-    gap: 10px;
+    gap: 16px;
   }
 }
 
@@ -63,7 +63,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 70px 0;
+    margin: 0 0 69px 0;
     flex-direction: row;
     gap: 80px;
   }
@@ -73,7 +73,7 @@
   position: relative;
   margin: 0;
   flex-grow: 1;
-  padding: 0 0 9px 0;
+  padding: 0 0 10px 0;
 
   @media (max-width: $mobile-width-only) {
     &::after {
@@ -110,20 +110,20 @@
   gap: 12px;
 
   @media (min-width: $tablet-width) {
-    margin: 55px 0 48px 0;
+    margin: 55px 0 49px 0;
 
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    // justify-content: flex-start;
 
-    column-gap: 136px;
+    column-gap: 150px;
     row-gap: 32px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 52px 0 62px 0;
     // flex-wrap: nowrap;
-    column-gap: 130px;
+    column-gap: 81px;
     row-gap: 30px;
   }
 }
@@ -319,7 +319,7 @@
 
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 21px;
 
   cursor: pointer;
 
@@ -385,15 +385,15 @@
 
 .program-form__option-radio-button {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   border: 1px solid $special_grey;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
 
   @media (min-width: $tablet-width) {
-    width: 40px;
-    height: 40px;
+    width: 37px;
+    height: 37px;
   }
 }
 
@@ -434,7 +434,11 @@
 
 .program-form__wrapper-checkbox {
   @media (min-width: $tablet-width) {
-    width: 16%;
+    width: 31%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 20%;
   }
 }
 
@@ -477,7 +481,7 @@
 .program-form__checkbox[type="checkbox"]:checked
   + .program-form__checkbox-field::before {
   width: 11px;
-  top: 18px;
+  top: 14px;
   left: 4px;
   transform: rotate(50deg);
 
@@ -490,10 +494,10 @@
 
 .program-form__checkbox[type="checkbox"]:checked
   + .program-form__checkbox-field::after {
-  width: 20px;
-  top: 15px;
-  left: 9px;
-  transform: rotate(-51deg);
+    width: 17px;
+    top: 11px;
+    left: 9px;
+    transform: rotate(-54deg);
 
   @media (min-width: $tablet-width) {
     width: 24px;
@@ -550,7 +554,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 82px 0;
+    margin: 0 0 89px 0;
     gap: 81px;
   }
 }
